@@ -9,7 +9,7 @@ import { Reveal } from '@/components/parallax-section'
 import { cn } from '@/lib/utils'
 
 // Sample extended portfolio data
-const portfolioItems2 = [
+const portfolioItems = [
   {
     id: 1,
     title: 'Sky Is the Limit',
@@ -191,7 +191,7 @@ const categories = [
 ]
 
 interface GalleryItemProps {
-  item: typeof portfolioItems2[0]
+  item: typeof portfolioItems[0]
 }
 
 const GalleryItem = ({ item }: GalleryItemProps) => {
@@ -239,8 +239,8 @@ export default function PortfolioPage() {
   const [activeCategory, setActiveCategory] = useState('all')
   
   const filteredItems = activeCategory === 'all'
-    ? portfolioItems2
-    : portfolioItems2.filter(item => item.category === activeCategory)
+    ? portfolioItems
+    : portfolioItems.filter(item => item.category === activeCategory)
   
   return (
     <section className="pt-32 pb-16 md:pt-40 md:pb-20">

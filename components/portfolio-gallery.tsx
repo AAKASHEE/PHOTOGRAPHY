@@ -12,8 +12,8 @@ import {
 import { cn } from '@/lib/utils'
 
 // Sample portfolio data
-const portfolioItems1 = [
- {
+const portfolioItems = [
+  {
     id: 1,
     title: 'Sky Is the Limit',
     category: 'landscape',
@@ -22,125 +22,67 @@ const portfolioItems1 = [
   },
   {
     id: 2,
+    title: 'Glasses but fragile',
+    category: 'urban',
+    image: '/img/IMG_0313.jpg',
+    aspectRatio: 'aspect-square',
+  },
+  {
+    id: 3,
+    title: 'Portrait of Me',
+    category: 'portrait',
+    image: '/img/00562eb5-e56e-4884-880a-dcc474e3c445.JPG',
+    aspectRatio: 'aspect-[3/4]',
+  },
+  {
+    id: 4,
     title: 'Desert Solitude',
     category: 'landscape',
     image: 'https://images.pexels.com/photos/1592119/pexels-photo-1592119.jpeg',
     aspectRatio: 'aspect-[4/3]',
   },
   {
-    id: 3,
-    title: 'Business Conference',
+    id: 5,
+    title: 'Leisure',
     category: 'event',
     image: '/img/IMG_0539.jpg',
     aspectRatio: 'aspect-square',
   },
   {
-    id: 4,
-    title: 'Mountain Lake',
-    category: 'landscape',
+    id: 6,
+    title: 'Street Light',
+    category: 'urban',
+    image: '/img/IMG_0553.jpg',
+    aspectRatio: 'aspect-[3/4]',
+  },
+  {
+    id: 7,
+    title: 'Birthday Celebration',
+    category: 'event',
+    image: '/img/IMG_1392.JPG',
+    aspectRatio: 'portrait',
+  },
+  {
+    id: 8,
+    title: 'Taste buds',
+    category: 'Foodie',
     image: '/img/IMG_1217.JPG',
     aspectRatio: 'aspect-square',
   },
   {
-    id: 5,
-    title: 'Mountain Lake',
-    category: 'landscape',
-    image: '/img/IMG_6504.JPG',
-    aspectRatio: 'aspect-square',
-  },
-  {
-    id: 6,
-    title: 'Mountain Lake',
-    category: 'landscape',
-    image: '/img/IMG_0554.jpg',
-    aspectRatio: 'aspect-square',
-  },
-  {
-    id: 7,
-    title: 'Mountain Lake',
-    category: 'landscape',
-    image: '/img/IMG_0290.JPG',
-    aspectRatio: 'aspect-square',
-  },
-  
-  {
-    id: 8,
-    title: 'Mountain Lake',
-    category: 'landscape',
-    image: '/img/IMG_1454.JPG',
-    aspectRatio: 'aspect-square',
-  },
-  {
     id: 9,
-    title: 'Mountain Lake',
-    category: 'landscape',
-    image: '/img/IMG_2249.JPG',
+    title: 'Dominoes',
+    category: 'Pleasure',
+    image: '/img/iMG_6504.JPG',
     aspectRatio: 'aspect-square',
   },
   {
     id: 10,
-    title: 'Mountain Lake',
-    category: 'landscape',
-    image: '/img/IMG_0187.JPG',
+    title: 'Taste Buds',
+    category: 'Foodie',
+    image: '/img/IMG_0554.jpg',
     aspectRatio: 'aspect-square',
-  },
-   {
-    id: 11,
-    title: 'Mountain Lake',
-    category: 'landscape',
-    image: '/img/IMG_6563.JPG',
-    aspectRatio: 'aspect-square',
-  },
-   {
-    id: 12,
-    title: 'Mountain Lake',
-    category: 'landscape',
-    image: '/img/IMG_2184.JPG',
-    aspectRatio: 'aspect-square',
-  },
-   {
-    id: 13,
-    title: 'Mountain Lake',
-    category: 'landscape',
-    image: '/img/IMG_0310.JPG',
-    aspectRatio: 'aspect-square',
-  },
-   {
-    id: 14,
-    title: 'Mountain Lake',
-    category: 'landscape',
-    image: '/img/IMG_1733.JPG',
-    aspectRatio: 'aspect-square',
-  },
-  {
-    id: 15,
-    title: 'Mountain Lake',
-    category: 'landscape',
-    image: '/img/IMG_2187.JPG',
-    aspectRatio: 'aspect-square',
-  },
-   {
-    id: 16,
-    title: 'Mountain Lake',
-    category: 'landscape',
-    image: '/img/IMG_0375.JPG',
-    aspectRatio: 'aspect-square',
-  },
-  {
-    id: 17,
-    title: 'Mountain Lake',
-    category: 'landscape',
-    image: '/img/IMG_6164.JPG',
-    aspectRatio: 'aspect-square',
-  },
-  {
-    id: 18,
-    title: 'Mountain Lake',
-    category: 'landscape',
-    image: '/img/IMG_1915.JPG',
-    aspectRatio: 'aspect-square',
-  },
-
+  }
 
 ]
 
@@ -158,7 +100,7 @@ const categories = [
 ]
 
 interface GalleryItemProps {
-  item: typeof portfolioItems1[0]
+  item: typeof portfolioItems[0]
 }
 
 const GalleryItem = ({ item }: GalleryItemProps) => {
@@ -206,8 +148,8 @@ export default function PortfolioGallery() {
   const [activeCategory, setActiveCategory] = useState('all')
   
   const filteredItems = activeCategory === 'all'
-    ? portfolioItems1
-    : portfolioItems1.filter(item => item.category === activeCategory)
+    ? portfolioItems
+    : portfolioItems.filter(item => item.category === activeCategory)
   
   return (
     <div className="space-y-8">
