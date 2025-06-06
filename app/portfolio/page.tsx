@@ -70,7 +70,7 @@ const portfolioItems = [
     id: 9,
     title: 'Dominoes',
     category: 'Pleasure',
-    image: '/img/iMG_6504.JPG',
+    image: '/img/IMG_6504.JPG',
     aspectRatio: 'aspect-square',
   },
   {
@@ -84,7 +84,7 @@ const portfolioItems = [
     id: 11,
     title: 'Blossoms',
     category: 'landscape',
-    image: '/img/IMG_0290.JPG',
+    image: '/img/IMG_0290.jpg',
     aspectRatio: 'aspect-square',
   },
   {
@@ -105,14 +105,14 @@ const portfolioItems = [
     id: 14,
     title: 'Sit by thy silence',
     category: 'self portrait',
-    image: '/img/IMG_2249.JPG',
+    image: '/img/IMG_2249.jpg',
     aspectRatio: 'aspect-square',
   },
   {
     id: 15,
     title: 'Creativity',
     category: 'fun',
-    image: '/img/IMG_0187.JPG',
+    image: '/img/IMG_0187.jpg',
     aspectRatio: 'aspect-square',
   },
    {
@@ -140,7 +140,7 @@ const portfolioItems = [
     id: 19,
     title: 'Funky Vibes',
     category: 'Restro',
-    image: '/img/IMG_0310.JPG',
+    image: '/img/IMG_0310.jpg',
     aspectRatio: 'aspect-square',
   },
    {
@@ -161,7 +161,7 @@ const portfolioItems = [
     id: 22,
     title: 'Ice cream or cake',
     category: 'OFC ',
-    image: '/img/IMG_0375.JPG',
+    image: '/img/IMG_0375.jpg',
     aspectRatio: 'aspect-square',
   },
   {

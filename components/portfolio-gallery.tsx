@@ -73,7 +73,7 @@ const portfolioItems = [
     id: 9,
     title: 'Dominoes',
     category: 'Pleasure',
-    image: '/img/iMG_6504.JPG',
+    image: '/img/IMG_6504.JPG',
     aspectRatio: 'aspect-square',
   },
   {
