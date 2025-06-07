@@ -98,7 +98,7 @@ export default function ContactPage() {
                 <div className="rounded-lg overflow-hidden h-64 relative">
                   <Image
                     src="/img/blr.JPG"
-                    alt="Studio interior"
+                    alnpm run t="Studio interior"
                     fill
                     className="object-cover"
                   />

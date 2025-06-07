@@ -7,6 +7,8 @@ import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { Reveal } from '@/components/parallax-section'
 import { cn } from '@/lib/utils'
+import { title } from 'node:process'
+import { AspectRatio } from '@radix-ui/react-aspect-ratio'
 
 // Sample extended portfolio data
 const portfolioItems = [
@@ -177,6 +179,169 @@ const portfolioItems = [
     category: 'STILLNESS',
     image: '/img/IMG_1915.JPG',
     aspectRatio: 'aspect-square',
+  },
+  {
+    id: 25,
+    title: 'Serenity',
+    category: 'You have my heart',
+    image: '/img/IMG_0343.JPG',
+    aspectRatio: 'aspect-square',
+  },
+  {
+    id: 26,
+    title: 'Boom',
+    category: 'Baam',
+    image: '/img/IMG_0385.JPG',
+    aspectRatio: 'aspect-square',
+  },
+  {
+    id: 27,
+    title: 'CARS',
+    category: 'Crazzzzzyy',
+    image: '/img/IMG_0408.JPG',
+    aspectRatio: 'aspect-square',
+  },
+  {
+    id: 28,
+    title: 'Tick Tock',
+    category: 'Timeless',
+    image: '/img/IMG_0844.JPG',
+    aspectRatio: 'aspect-square',
+  },
+  {
+    id: 29,
+    title: 'SHIT',
+    category: 'SASSY',
+    image: '/img/IMG_1191.jpg',
+    aspectRatio: 'aspect-square',
+  },
+  {
+    id: 30,
+    title: 'Cute',
+    category: 'Smoocchch',
+    image: '/img/IMG_1059.jpg',
+    aspectRatio: 'aspect-square',
+  },
+  {
+    id: 31,
+    title: 'Silence',
+    category: 'I AM',
+    image: '/img/IMG_1521.jpg',
+    aspectRatio: 'aspect-square',
+  },
+  {
+    id:32,
+    title:'I Am',
+    category:'Inevitable',
+    image:'/img/IMG_2163.jpg',
+    aspectRatio:'aspect-square',
+  },
+  {
+    id:33,
+    title:'',
+    category:'',
+    image:'/img/IMG_8344 2.JPG',
+    aspectRatio:'aspect-square',
+  },
+  {
+    id:34,
+    title:'',
+    category:'',
+    image:'/img/IMG_2352.JPG',
+    aspectRatio:'aspect-square',
+  },
+  {
+    id:35,
+    title:'',
+    category:'',
+    image:'/img/IMG_6552.JPG',
+    aspectRatio:'aspect-square',
+  },
+  {
+    id:36,
+    title:'',
+    category:'',
+    image:'/img/IMG_6886.JPG',
+    aspectRatio:'aspect-square',
+  },
+  {
+    id:37,
+    title:'',
+    category:'',
+    image:'/img/IMG_6910.JPG',
+    aspectRatio:'aspect-square',
+  },
+   {
+    id:38,
+    title:'',
+    category:'',
+    image:'/img/IMG_2349.JPG',
+    aspectRatio:'aspect-square',
+  },
+  {
+    id:39,
+    title:'',
+    category:'',
+    image:'/img/IMG_8345.JPG',
+    aspectRatio:'aspect-square',
+  },
+  {
+    id:40,
+    title:'',
+    category:'',
+    image:'/img/IMG_8353.JPG',
+    aspectRatio:'aspect-square',
+  },
+   {
+    id:41,
+    title:'',
+    category:'',
+    image:'/img/IMG_8067.JPG',
+    aspectRatio:'aspect-square',
+  },
+  {
+    id:42,
+    title:'',
+    category:'',
+    image:'/img/IMG_7631.JPG',
+    aspectRatio:'aspect-square',
+  },
+  {
+    id:43,
+    title:'',
+    category:'',
+    image:'/img/IMG_1085.JPG',
+    aspectRatio:'aspect-square',
+  },
+
+  {
+    id:44,
+    title:'',
+    category:'',
+    image:'/img/IMG_2310.JPG',
+    aspectRatio:'aspect-square',
+  },
+
+  {
+    id:45,
+    title:'',
+    category:'',
+    image:'/img/IMG_7494.JPG',
+    aspectRatio:'aspect-square',
+  },
+  {
+    id:46,
+    title:'',
+    category:'',
+    image:'/img/120579fa-e3ee-45ed-9126-dc917760fd39.JPG',
+    aspectRatio:'aspect-square',
+  },
+  {
+    id:47,
+    title:'',
+    category:'',
+    image:'/img/IMG_5348.JPG',
+    aspectRatio:'aspect-square',
   },
 ]
 
