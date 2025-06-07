@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import { Mail, Phone, MapPin, Instagram, Facebook, Twitter } from 'lucide-react'
 import { Reveal } from '@/components/parallax-section'
@@ -14,7 +16,7 @@ export default function ContactPage() {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="text-muted-foreground">
-                Have a question or want to book a session? We'd love to hear from you.
+                Have a question or want to book a session? We&apos;d love to hear from you.
                 Fill out the form below or reach out directly through our contact information.
               </p>
             </Reveal>
@@ -39,8 +41,8 @@ export default function ContactPage() {
                       <div>
                         <h3 className="font-medium mb-1">Studio Address</h3>
                         <address className="not-italic text-muted-foreground">
-                          <p>5th Cross Road,Kumaraswamy Layout</p>
-                          <p>Bengaluru,BLR,560078</p>
+                          <p>5th Cross Road, Kumaraswamy Layout</p>
+                          <p>Bengaluru, BLR, 560078</p>
                         </address>
                       </div>
                     </div>
@@ -98,7 +100,7 @@ export default function ContactPage() {
                 <div className="rounded-lg overflow-hidden h-64 relative">
                   <Image
                     src="/img/blr.JPG"
-                    alnpm run t="Studio interior"
+                    alt="Studio interior"
                     fill
                     className="object-cover"
                   />
