@@ -240,7 +240,7 @@ const portfolioItems = [
     id:33,
     title:'',
     category:'',
-    image:'/img/IMG_8344.jpg',
+    image:'/img/IMG_8344.JPG',
     aspectRatio:'aspect-square',
   },
   {
