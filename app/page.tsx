@@ -13,11 +13,11 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <Reveal>
-              <h2 className="font-playfair text-3xl md:text-4xl mb-4">Welcome to Luminous Photography</h2>
+              <h2 className="font-playfair text-3xl md:text-4xl mb-4">Welcome to SNapDart Photography</h2>
             </Reveal>
             <Reveal delay={0.2}>
               <p className="text-muted-foreground">
-                We capture life's most precious moments through the artistry of photography.
+                We capture life&apos;s most precious moments through the artistry of photography.
                 From stunning landscapes to intimate portraits, our passion is preserving your memories in timeless images.
               </p>
             </Reveal>
@@ -29,10 +29,10 @@ export default function Home() {
                 <Reveal direction="left">
                   <h3 className="font-playfair text-2xl md:text-3xl mb-4">Our Vision</h3>
                   <p className="text-muted-foreground mb-6">
-                    We believe that photography is more than just taking pictures – it's about telling stories, capturing emotions, and preserving moments that might otherwise be forgotten. 
+                    We believe that photography is more than just taking pictures – it&apos;s about telling stories, capturing emotions, and preserving moments that might otherwise be forgotten. 
                   </p>
                   <p className="text-muted-foreground">
-                    Every click of our shutter is guided by artistic intuition and technical mastery, ensuring that your photographs aren't just seen – they're felt.
+                    Every click of our shutter is guided by artistic intuition and technical mastery, ensuring that your photographs aren&apos;t just seen – they&apos;re felt.
                   </p>
                 </Reveal>
               </div>
@@ -85,7 +85,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/60" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
           <Reveal>
-            <h2 className="font-playfair text-3xl md:text-5xl mb-6 text-center max-w-3xl">Let's Create Something Beautiful Together</h2>
+            <h2 className="font-playfair text-3xl md:text-5xl mb-6 text-center max-w-3xl">Let&apos;s Create Something Beautiful Together</h2>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="text-white/80 text-lg mb-8 text-center max-w-xl">

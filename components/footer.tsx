@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-playfair text-xl mb-4">Luminous</h3>
+            <h3 className="font-playfair text-xl mb-4">SNapDart</h3>
             <p className="text-muted-foreground mb-4">
               Capturing moments, preserving memories, and telling stories through the art of photography.
             </p>
@@ -125,7 +125,7 @@ const Footer = () => {
         
         <div className="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Luminous Photography. All rights reserved.
+            &copy; {new Date().getFullYear()} SNapDart Photography. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm">
             <Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">

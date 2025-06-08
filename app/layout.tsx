@@ -5,7 +5,7 @@ import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'Luminous - Photography Portfolio',
+  title: 'SNapDart - Photography',
   description: 'Professional photography portfolio showcasing breathtaking moments captured through the lens',
 };
 

@@ -345,14 +345,34 @@ const portfolioItems = [
   },
 ]
 
+
 const categories = [
   { id: 'all', name: 'All' },
   { id: 'landscape', name: 'Landscape' },
   { id: 'portrait', name: 'Portrait' },
-  { id: 'urban,Hold My Hand', name: 'Urban' },
+  { id: 'self portrait', name: 'Self Portrait' },
+  { id: 'urban', name: 'Urban' },
   { id: 'event', name: 'Event' },
+  { id: 'Foodie', name: 'Food' },
+  { id: 'Pleasure', name: 'Leisure' },
+  { id: 'happiness', name: 'Joy' },
+  { id: 'fun', name: 'Fun' },
+  { id: 'Escape', name: 'Travel' },
+  { id: 'Greater Good', name: 'Spiritual' },
+  { id: 'Restro', name: 'Restaurant' },
   { id: 'And let me play among the Stars', name: 'Space' },
-  { id: 'Inside your mind', name: 'BRAIN' },
+  { id: 'Inside your mind', name: 'Mindful' },
+  { id: 'OFC', name: 'Sweet Treats' },
+  { id: 'Hold My Hand', name: 'Connection' },
+  { id: 'STILLNESS', name: 'Peace' },
+  { id: 'You have my heart', name: 'Love' },
+  { id: 'Baam', name: 'Action' },
+  { id: 'Crazzzzzyy', name: 'Cars' },
+  { id: 'Timeless', name: 'Time' },
+  { id: 'SASSY', name: 'Attitude' },
+  { id: 'Smoocchch', name: 'Cute' },
+  { id: 'I AM', name: 'Identity' },
+  { id: 'Inevitable', name: 'Destiny' }
 ]
 
 interface GalleryItemProps {

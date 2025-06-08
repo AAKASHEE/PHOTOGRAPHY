@@ -9,7 +9,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <Reveal>
-              <h1 className="font-playfair text-4xl md:text-5xl mb-4">About Luminous</h1>
+              <h1 className="font-playfair text-4xl md:text-5xl mb-4">About SNapDart</h1>
             </Reveal>
             <Reveal delay={0.2}>
               <p className="text-muted-foreground">
@@ -35,7 +35,7 @@ export default function AboutPage() {
                 <h2 className="font-playfair text-3xl mb-6">Our Story</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Luminous Photography was founded in 2010 by award-winning photographer Alexander Reid with a simple mission: to capture life's most precious moments with authenticity and artistry.
+                    SNapDart Photography was founded in 2010 by award-winning photographer Alexander Reid with a simple mission: to capture life&apos;s most precious moments with authenticity and artistry.
                   </p>
                   <p>
                     What began as a solo venture has grown into a team of talented photographers, each bringing their unique perspective and specialized skills to our collective work.

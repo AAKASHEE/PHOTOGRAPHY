@@ -86,17 +86,15 @@ const portfolioItems = [
 
 ]
 
+
 const categories = [
   { id: 'all', name: 'All' },
   { id: 'landscape', name: 'Landscape' },
   { id: 'portrait', name: 'Portrait' },
-  { id: 'urban,Hold My Hand', name: 'Urban' },
+  { id: 'urban', name: 'Urban' },
   { id: 'event', name: 'Event' },
-  { id: 'And let me play among the Stars', name: 'Space' },
-  { id: 'Inside your mind', name: 'BRAIN' },
-
-  
-
+  { id: 'Foodie', name: 'Food' },
+  { id: 'Pleasure', name: 'Leisure' }
 ]
 
 interface GalleryItemProps {

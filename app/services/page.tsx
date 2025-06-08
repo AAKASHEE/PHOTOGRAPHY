@@ -33,7 +33,7 @@ export default function ServicesPage() {
                 <h2 className="font-playfair text-3xl mb-6">Why Choose Us?</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    At Luminous Photography, we combine technical expertise with creative vision to deliver exceptional photography that exceeds expectations.
+                    At SNapDart Photography, we combine technical expertise with creative vision to deliver exceptional photography that exceeds expectations.
                   </p>
                   <p>
                     Our team of experienced photographers specializes in various styles and techniques, ensuring we can capture your unique vision perfectly.
@@ -341,7 +341,7 @@ export default function ServicesPage() {
                   <div className="bg-card p-6 rounded-lg shadow-sm">
                     <h3 className="text-lg font-medium mb-2">Do you travel for photography assignments?</h3>
                     <p className="text-muted-foreground">
-                      Yes, we're available for travel worldwide. Travel fees may apply depending on the location and duration of the assignment.
+                      Yes, we&apos;re available for travel worldwide. Travel fees may apply depending on the location and duration of the assignment.
                     </p>
                   </div>
                 </Reveal>

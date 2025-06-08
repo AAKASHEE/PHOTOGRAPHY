@@ -40,7 +40,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link href="/" className="flex items-center space-x-2">
             <Camera className="h-6 w-6" />
-            <span className="font-playfair text-xl md:text-2xl font-medium">Luminous</span>
+            <span className="font-playfair text-xl md:text-2xl font-medium">SNapDart</span>
           </Link>
 
           {/* Desktop Menu */}
