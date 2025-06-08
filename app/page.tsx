@@ -39,7 +39,7 @@ export default function Home() {
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Reveal direction="right">
                   <img 
-                    src="https://images.pexels.com/photos/1586795/pexels-photo-1586795.jpeg" 
+                    src="/IMG_2466.jpg" 
                     alt="Photographer working" 
                     className="absolute inset-0 w-full h-full object-cover"
                   />

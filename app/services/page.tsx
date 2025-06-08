@@ -86,7 +86,7 @@ export default function ServicesPage() {
             <Reveal direction="right">
               <div className="relative h-[500px] rounded-lg overflow-hidden">
                 <Image 
-                  src="https://images.pexels.com/photos/1209613/pexels-photo-1209613.jpeg" 
+                  src="/camera_eq.jpg" 
                   alt="Professional camera equipment" 
                   fill
                   className="object-cover"
@@ -105,7 +105,7 @@ export default function ServicesPage() {
                 <Card className="overflow-hidden border-none shadow-lg">
                   <div className="relative h-64">
                     <Image 
-                      src="https://images.pexels.com/photos/1456613/pexels-photo-1456613.jpeg" 
+                      src="/ph_wedding.png" 
                       alt="Wedding Photography"
                       fill
                       className="object-cover"
@@ -148,7 +148,7 @@ export default function ServicesPage() {
                 <Card className="overflow-hidden border-none shadow-lg">
                   <div className="relative h-64">
                     <Image 
-                      src="https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg" 
+                      src="/img/portrat_.png" 
                       alt="Portrait Photography"
                       fill
                       className="object-cover"
@@ -191,7 +191,7 @@ export default function ServicesPage() {
                 <Card className="overflow-hidden border-none shadow-lg">
                   <div className="relative h-64">
                     <Image 
-                      src="https://images.pexels.com/photos/4338038/pexels-photo-4338038.jpeg" 
+                      src="/img/commercial.png" 
                       alt="Commercial Photography"
                       fill
                       className="object-cover"
@@ -237,7 +237,7 @@ export default function ServicesPage() {
               <Card className="overflow-hidden border-none shadow-lg">
                 <div className="relative h-48">
                   <Image 
-                    src="https://images.pexels.com/photos/2418571/pexels-photo-2418571.jpeg" 
+                    src="/event.jpg" 
                     alt="Event Photography"
                     fill
                     className="object-cover"
@@ -276,7 +276,7 @@ export default function ServicesPage() {
               <Card className="overflow-hidden border-none shadow-lg">
                 <div className="relative h-48">
                   <Image 
-                    src="https://images.pexels.com/photos/3727508/pexels-photo-3727508.jpeg" 
+                    src="/img/ph.jpg" 
                     alt="Photography Workshops"
                     fill
                     className="object-cover"
@@ -362,7 +362,7 @@ export default function ServicesPage() {
       
       <ParallaxSection speed={0.05} className="relative h-[400px] overflow-hidden">
         <img 
-          src="https://images.pexels.com/photos/3821367/pexels-photo-3821367.jpeg" 
+          src="/camera_eq.jpg" 
           alt="Photography equipment" 
           className="absolute inset-0 w-full h-full object-cover"
         />

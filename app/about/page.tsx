@@ -22,7 +22,7 @@ export default function AboutPage() {
             <Reveal direction="left">
               <div className="relative h-[500px] rounded-lg overflow-hidden">
                 <Image 
-                  src="https://images.pexels.com/photos/3052360/pexels-photo-3052360.jpeg" 
+                  src="/eyes.jpg" 
                   alt="Photographer at work" 
                   fill
                   className="object-cover"
@@ -103,14 +103,14 @@ export default function AboutPage() {
                 <div className="bg-card rounded-lg overflow-hidden shadow-md">
                   <div className="relative h-80">
                     <Image 
-                      src="https://images.pexels.com/photos/1844547/pexels-photo-1844547.jpeg" 
-                      alt="Alexander Reid" 
+                      src="/IMG_2434.jpg" 
+                      alt="AAKASHE" 
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-medium mb-1">Alexander Reid</h3>
+                    <h3 className="text-xl font-medium mb-1">AAKASHE</h3>
                     <p className="text-muted-foreground mb-4">Founder & Lead Photographer</p>
                     <p className="text-sm">
                       Specializing in landscape and portrait photography, Alex has received multiple international awards for his distinctive visual style.
@@ -123,17 +123,17 @@ export default function AboutPage() {
                 <div className="bg-card rounded-lg overflow-hidden shadow-md">
                   <div className="relative h-80">
                     <Image 
-                      src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" 
-                      alt="Sophia Chen" 
+                      src="/IMG_2388.jpg" 
+                      alt="Arshia Sharma" 
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-medium mb-1">Sophia Chen</h3>
+                    <h3 className="text-xl font-medium mb-1">Arshia Sharma</h3>
                     <p className="text-muted-foreground mb-4">Wedding Specialist</p>
                     <p className="text-sm">
-                      With an eye for emotional moments, Sophia has documented over 200 weddings, creating timeless memories for couples worldwide.
+                      With an eye for emotional moments, Sophia has documented over 20+ weddings, creating timeless memories for couples worldwide.
                     </p>
                   </div>
                 </div>
@@ -143,14 +143,14 @@ export default function AboutPage() {
                 <div className="bg-card rounded-lg overflow-hidden shadow-md">
                   <div className="relative h-80">
                     <Image 
-                      src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" 
-                      alt="Marcus Johnson" 
+                      src="FFF" 
+                      alt="bla bla" 
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="text-xl font-medium mb-1">Marcus Johnson</h3>
+                    <h3 className="text-xl font-medium mb-1">bla bla</h3>
                     <p className="text-muted-foreground mb-4">Commercial Photographer</p>
                     <p className="text-sm">
                       Former advertising executive turned photographer, Marcus brings strategic thinking and creative direction to commercial projects.

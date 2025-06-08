@@ -22,7 +22,7 @@ const Footer = () => {
             </Link>
 
             <Link 
-              href="https://facebook.com/yourprofile" 
+              href="https://www.facebook.com/profile.php?id=61575703270914" 
               className="text-muted-foreground hover:text-primary transition-colors"
               target="_blank"
               rel="noopener noreferrer"

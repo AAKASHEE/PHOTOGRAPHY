@@ -77,7 +77,7 @@ export default function ContactPage() {
                       </a>
 
                       <a 
-                        href="https://facebook.com/yourprofile" 
+                        href="https://www.facebook.com/profile.php?id=61575703270914" 
                         className="bg-accent rounded-full p-2 hover:bg-primary hover:text-primary-foreground transition-colors"
                         target="_blank"
                         rel="noopener noreferrer"
