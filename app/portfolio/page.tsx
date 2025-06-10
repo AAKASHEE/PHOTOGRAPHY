@@ -1,14 +1,7 @@
 "use client"
 
-import { useState } from 'react'
-import Image from 'next/image'
-import { motion, AnimatePresence } from 'framer-motion'
-import { Button } from '@/components/ui/button'
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { Reveal } from '@/components/parallax-section'
-import { cn } from '@/lib/utils'
-import { title } from 'node:process'
-import { AspectRatio } from '@radix-ui/react-aspect-ratio'
+import { EnhancedGallery } from '@/components/enhanced-gallery'
 
 // Sample extended portfolio data
 const portfolioItems = [
@@ -345,7 +338,6 @@ const portfolioItems = [
   },
 ]
 
-
 const categories = [
   { id: 'all', name: 'All' },
   { id: 'landscape', name: 'Landscape' },
@@ -375,58 +367,7 @@ const categories = [
   { id: 'Inevitable', name: 'Destiny' }
 ]
 
-interface GalleryItemProps {
-  item: typeof portfolioItems[0]
-}
-
-const GalleryItem = ({ item }: GalleryItemProps) => {
-  return (
-    <Dialog>
-      <DialogTrigger asChild>
-        <motion.div
-          layout
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className={cn(
-            "relative cursor-pointer group overflow-hidden rounded-md",
-            item.aspectRatio
-          )}
-        >
-          <Image
-            src={item.image}
-            alt={item.title}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
-          <div className="absolute inset-0 p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <h3 className="text-white text-lg font-medium">{item.title}</h3>
-            <p className="text-white/80 text-sm capitalize">{item.category}</p>
-          </div>
-        </motion.div>
-      </DialogTrigger>
-      <DialogContent className="max-w-5xl p-0 bg-transparent border-none">
-        <div className="relative w-full aspect-[16/9]">
-          <Image
-            src={item.image}
-            alt={item.title}
-            fill
-            className="object-contain rounded-lg"
-          />
-        </div>
-      </DialogContent>
-    </Dialog>
-  )
-}
-
 export default function PortfolioPage() {
-  const [activeCategory, setActiveCategory] = useState('all')
-  
-  const filteredItems = activeCategory === 'all'
-    ? portfolioItems
-    : portfolioItems.filter(item => item.category === activeCategory)
-  
   return (
     <section className="pt-32 pb-16 md:pt-40 md:pb-20">
       <div className="container mx-auto px-4 md:px-6">
@@ -437,38 +378,12 @@ export default function PortfolioPage() {
           <Reveal delay={0.2}>
             <p className="text-muted-foreground">
               Explore our diverse collection of photography work across various styles and subjects.
+              Click on any photo to view it in full size and navigate using arrow keys.
             </p>
           </Reveal>
         </div>
         
-        <div className="space-y-12">
-          <Reveal>
-            <div className="flex flex-wrap justify-center gap-2">
-              {categories.map((category) => (
-                <Button
-                  key={category.id}
-                  variant={activeCategory === category.id ? "default" : "outline"}
-                  size="sm"
-                  onClick={() => setActiveCategory(category.id)}
-                  className="capitalize"
-                >
-                  {category.name}
-                </Button>
-              ))}
-            </div>
-          </Reveal>
-          
-          <motion.div 
-            layout
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
-            <AnimatePresence>
-              {filteredItems.map((item) => (
-                <GalleryItem key={item.id} item={item} />
-              ))}
-            </AnimatePresence>
-          </motion.div>
-        </div>
+        <EnhancedGallery photos={portfolioItems} categories={categories} />
       </div>
     </section>
   )

@@ -4,11 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { 
-  Dialog, 
-  DialogContent, 
-  DialogTrigger 
-} from '@/components/ui/dialog'
+import { PhotoNavigator } from '@/components/photo-navigator'
 import { cn } from '@/lib/utils'
 
 // Sample portfolio data
@@ -83,9 +79,7 @@ const portfolioItems = [
     image: '/img/IMG_0554.jpg',
     aspectRatio: 'aspect-square',
   }
-
 ]
-
 
 const categories = [
   { id: 'all', name: 'All' },
@@ -97,58 +91,29 @@ const categories = [
   { id: 'Pleasure', name: 'Leisure' }
 ]
 
-interface GalleryItemProps {
-  item: typeof portfolioItems[0]
-}
-
-const GalleryItem = ({ item }: GalleryItemProps) => {
-  return (
-    <Dialog>
-      <DialogTrigger asChild>
-        <motion.div
-          layout
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className={cn(
-            "relative cursor-pointer group overflow-hidden rounded-md",
-            item.aspectRatio
-          )}
-        >
-          <Image
-            src={item.image}
-            alt={item.title}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
-          <div className="absolute inset-0 p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <h3 className="text-white text-lg font-medium">{item.title}</h3>
-            <p className="text-white/80 text-sm capitalize">{item.category}</p>
-          </div>
-        </motion.div>
-      </DialogTrigger>
-      <DialogContent className="max-w-5xl p-0 bg-transparent border-none">
-        <div className="relative w-full aspect-[16/9]">
-          <Image
-            src={item.image}
-            alt={item.title}
-            fill
-            className="object-contain rounded-lg"
-          />
-        </div>
-      </DialogContent>
-    </Dialog>
-  )
-}
-
 export default function PortfolioGallery() {
   const [activeCategory, setActiveCategory] = useState('all')
+  const [isNavigatorOpen, setIsNavigatorOpen] = useState(false)
+  const [currentPhotoId, setCurrentPhotoId] = useState<number | null>(null)
   
   const filteredItems = activeCategory === 'all'
     ? portfolioItems
     : portfolioItems.filter(item => item.category === activeCategory)
-  
+
+  const handlePhotoClick = (photoId: number) => {
+    setCurrentPhotoId(photoId)
+    setIsNavigatorOpen(true)
+  }
+
+  const handlePhotoChange = (photoId: number) => {
+    setCurrentPhotoId(photoId)
+  }
+
+  const handleCloseNavigator = () => {
+    setIsNavigatorOpen(false)
+    setCurrentPhotoId(null)
+  }
+
   return (
     <div className="space-y-8">
       <div className="flex flex-wrap justify-center gap-2">
@@ -171,10 +136,44 @@ export default function PortfolioGallery() {
       >
         <AnimatePresence>
           {filteredItems.map((item) => (
-            <GalleryItem key={item.id} item={item} />
+            <motion.div
+              key={item.id}
+              layout
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className={cn(
+                "relative cursor-pointer group overflow-hidden rounded-md",
+                item.aspectRatio
+              )}
+              onClick={() => handlePhotoClick(item.id)}
+            >
+              <Image
+                src={item.image}
+                alt={item.title}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
+              <div className="absolute inset-0 p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="text-white text-lg font-medium">{item.title}</h3>
+                <p className="text-white/80 text-sm capitalize">{item.category}</p>
+                <div className="mt-1 text-xs text-white/60">
+                  Click to view • Use arrow keys to navigate
+                </div>
+              </div>
+            </motion.div>
           ))}
         </AnimatePresence>
       </motion.div>
+
+      <PhotoNavigator
+        photos={filteredItems}
+        isOpen={isNavigatorOpen}
+        currentPhotoId={currentPhotoId}
+        onClose={handleCloseNavigator}
+        onPhotoChange={handlePhotoChange}
+      />
     </div>
   )
 }
