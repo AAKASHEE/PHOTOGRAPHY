@@ -35,13 +35,13 @@ export default function AboutPage() {
                 <h2 className="font-playfair text-3xl mb-6">Our Story</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    SNapDart Photography was founded in 2010 by award-winning photographer Alexander Reid with a simple mission: to capture life&apos;s most precious moments with authenticity and artistry.
+                    SNapDart Photography was founded in 2025 by AAKASHE with a simple mission: to capture life&apos;s most story telling each of our photographs portrait.
                   </p>
                   <p>
                     What began as a solo venture has grown into a team of talented photographers, each bringing their unique perspective and specialized skills to our collective work.
                   </p>
                   <p>
-                    Over the years, we&apos;ve had the privilege of working with hundreds of clients, from couples celebrating their wedding day to brands seeking to elevate their visual presence.
+                    Over the years, we&apos;ve had the privilege of working with many of clients, from couples celebrating their wedding day to brands seeking to elevate their visual presence.
                   </p>
                   <p>
                     Our approach combines technical excellence with a deeply personal touch. We believe that the best photographs emerge when subjects feel comfortable and authentic, allowing us to capture genuine emotions and connections.
@@ -113,7 +113,7 @@ export default function AboutPage() {
                     <h3 className="text-xl font-medium mb-1">AAKASHE</h3>
                     <p className="text-muted-foreground mb-4">Founder & Lead Photographer</p>
                     <p className="text-sm">
-                      Specializing in landscape and portrait photography, Alex has received multiple international awards for his distinctive visual style.
+                      Specializing in landscape and portrait photography, AAKASHE has received multiple international awards for his distinctive visual style.
                     </p>
                   </div>
                 </div>
@@ -131,9 +131,9 @@ export default function AboutPage() {
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-medium mb-1">Arshia Sharma</h3>
-                    <p className="text-muted-foreground mb-4">Wedding Specialist</p>
+                    <p className="text-muted-foreground mb-4">Lead Photographer</p>
                     <p className="text-sm">
-                      With an eye for emotional moments, Sophia has documented over 20+ weddings, creating timeless memories for couples worldwide.
+                      With an eye for emotional moments, Arshia has documented over 20+ sessions, creating timeless memories for couples worldwide.
                     </p>
                   </div>
                 </div>
