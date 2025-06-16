@@ -4,7 +4,7 @@ const fsSync = require('fs');
 const path = require('path');
 const os = require('os');
 
-// Enhanced configuration with caching optimizations
+// Configuration
 const CONFIG = {
   inputDir: './public/images',
   outputDir: './public/images/optimized',
@@ -21,9 +21,8 @@ const CONFIG = {
     { ext: 'webp', quality: 80, options: {} },
     { ext: 'jpg', quality: 85, options: { mozjpeg: true } }
   ],
-  // New caching options
   generateServiceWorker: true,
-  cacheStrategy: 'cache-first', // or 'network-first'
+  cacheStrategy: 'cache-first',
   maxCacheAge: 7 * 24 * 60 * 60 * 1000 // 7 days
 };
 
@@ -100,7 +99,6 @@ class ImageProcessor {
       const originalSize = (await fs.stat(inputPath)).size;
       console.log(`Processing: ${file} (${metadata.width}x${metadata.height}, ${(originalSize / 1024).toFixed(1)}KB)`);
 
-      // Initialize manifest entry
       this.manifest.images[baseName] = {
         original: {
           width: metadata.width,
@@ -155,8 +153,6 @@ class ImageProcessor {
         }
 
         await formatPipeline.toFile(outputPath);
-        
-        // Get file size for manifest
         const stats = await fs.stat(outputPath);
         variants[`${sizeConfig.suffix.slice(1)}_${format.ext}`] = {
           path: `/images/optimized/${outputFileName}`,
@@ -168,7 +164,6 @@ class ImageProcessor {
       }
     }
 
-    // Add variants to manifest
     if (!this.manifest.images[baseName].variants[sizeConfig.suffix.slice(1)]) {
       this.manifest.images[baseName].variants[sizeConfig.suffix.slice(1)] = variants;
     }
@@ -194,9 +189,9 @@ class ImageProcessor {
       this.manifest.totalProcessed = this.processedCount;
       this.manifest.cacheStrategy = CONFIG.cacheStrategy;
       this.manifest.maxCacheAge = CONFIG.maxCacheAge;
-      
+
       await fs.writeFile(
-        path.join(CONFIG.outputDir, 'manifest.json'), 
+        path.join(CONFIG.outputDir, 'manifest.json'),
         JSON.stringify(this.manifest, null, 2)
       );
       console.log('Generated enhanced manifest.json');
@@ -214,16 +209,15 @@ const CACHE_NAME = 'images-v${Date.now()}';
 const CACHE_STRATEGY = '${CONFIG.cacheStrategy}';
 const MAX_CACHE_AGE = ${CONFIG.maxCacheAge};
 
-// List of image paths to cache
 const IMAGE_PATHS = [
-${Object.values(this.manifest.images).map(img => 
-  Object.values(img.variants).map(variants => 
+${Object.values(this.manifest.images).map(img =>
+  Object.values(img.variants).map(variants =>
     Object.values(variants).map(variant => `  '${variant.path}'`).join(',\n')
   ).join(',\n')
 ).join(',\n')}
 ];
 
-self.addEventListener('install', (event) => {
+self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => cache.addAll(IMAGE_PATHS))
@@ -231,44 +225,32 @@ self.addEventListener('install', (event) => {
   );
 });
 
-self.addEventListener('activate', (event) => {
+self.addEventListener('activate', event => {
   event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return Promise.all(
-        cacheNames.map(cacheName => {
-          if (cacheName !== CACHE_NAME) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    }).then(() => self.clients.claim())
+    caches.keys().then(names =>
+      Promise.all(names.map(name =>
+        name !== CACHE_NAME ? caches.delete(name) : null
+      ))
+    ).then(() => self.clients.claim())
   );
 });
 
-self.addEventListener('fetch', (event) => {
+self.addEventListener('fetch', event => {
   if (event.request.destination === 'image') {
-    event.respondWith(
-      handleImageRequest(event.request)
-    );
+    event.respondWith(handleImageRequest(event.request));
   }
 });
 
 async function handleImageRequest(request) {
   const cache = await caches.open(CACHE_NAME);
-  
   if (CACHE_STRATEGY === 'cache-first') {
     const cachedResponse = await cache.match(request);
     if (cachedResponse) {
-      // Check if cache is still valid
       const cacheDate = new Date(cachedResponse.headers.get('date'));
       const isExpired = Date.now() - cacheDate.getTime() > MAX_CACHE_AGE;
-      
-      if (!isExpired) {
-        return cachedResponse;
-      }
+      if (!isExpired) return cachedResponse;
     }
   }
-  
   try {
     const networkResponse = await fetch(request);
     if (networkResponse.ok) {
@@ -290,57 +272,34 @@ async function handleImageRequest(request) {
   }
 }
 
-// Enhanced picture element generator with preload hints
 function generateEnhancedPictureElement(imageName, alt = '', className = '', width = 1200, height = 800, preload = false, eager = false) {
   const baseName = path.parse(imageName).name;
   const loading = eager ? 'eager' : 'lazy';
   const decoding = eager ? 'sync' : 'async';
   const fetchPriority = preload ? 'high' : 'auto';
-  
+
   let preloadLinks = '';
   if (preload) {
     preloadLinks = `
-<!-- Preload critical images -->
 <link rel="preload" as="image" href="/images/optimized/${baseName}-desktop.avif" type="image/avif">
 <link rel="preload" as="image" href="/images/optimized/${baseName}-desktop.webp" type="image/webp">`;
   }
 
   return preloadLinks + `
 <picture${className ? ` class="${className}"` : ''}>
-  <source media="(max-width: 320px)" 
-          srcset="/images/optimized/${baseName}-mobile.avif" 
-          type="image/avif">
-  <source media="(max-width: 768px)" 
-          srcset="/images/optimized/${baseName}-tablet.avif" 
-          type="image/avif">
-  <source media="(max-width: 1200px)" 
-          srcset="/images/optimized/${baseName}-desktop.avif" 
-          type="image/avif">
-  <source srcset="/images/optimized/${baseName}-large.avif" 
-          type="image/avif">
+  <source media="(max-width: 320px)" srcset="/images/optimized/${baseName}-mobile.avif" type="image/avif">
+  <source media="(max-width: 768px)" srcset="/images/optimized/${baseName}-tablet.avif" type="image/avif">
+  <source media="(max-width: 1200px)" srcset="/images/optimized/${baseName}-desktop.avif" type="image/avif">
+  <source srcset="/images/optimized/${baseName}-large.avif" type="image/avif">
 
-  <source media="(max-width: 320px)" 
-          srcset="/images/optimized/${baseName}-mobile.webp" 
-          type="image/webp">
-  <source media="(max-width: 768px)" 
-          srcset="/images/optimized/${baseName}-tablet.webp" 
-          type="image/webp">
-  <source media="(max-width: 1200px)" 
-          srcset="/images/optimized/${baseName}-desktop.webp" 
-          type="image/webp">
-  <source srcset="/images/optimized/${baseName}-large.webp" 
-          type="image/webp">
+  <source media="(max-width: 320px)" srcset="/images/optimized/${baseName}-mobile.webp" type="image/webp">
+  <source media="(max-width: 768px)" srcset="/images/optimized/${baseName}-tablet.webp" type="image/webp">
+  <source media="(max-width: 1200px)" srcset="/images/optimized/${baseName}-desktop.webp" type="image/webp">
+  <source srcset="/images/optimized/${baseName}-large.webp" type="image/webp">
 
-  <img src="/images/optimized/${baseName}-desktop.jpg" 
-       alt="${alt}" 
-       class="${className}"
-       loading="${loading}" 
-       decoding="${decoding}" 
-       fetchpriority="${fetchPriority}"
-       width="${width}" 
-       height="${height}" 
-       style="max-width: 100%; height: auto;"
-       crossorigin="anonymous">
+  <img src="/images/optimized/${baseName}-desktop.jpg" alt="${alt}" class="${className}"
+       loading="${loading}" decoding="${decoding}" fetchpriority="${fetchPriority}"
+       width="${width}" height="${height}" style="max-width: 100%; height: auto;" crossorigin="anonymous">
 </picture>`;
 }
 
@@ -367,9 +326,9 @@ async function optimizeImages() {
     console.log(`✅ Completed ${processor.processedCount} images in ${duration}s`);
 
     if (files.length > 0) {
-      console.log('\n📝 Example HTML usage (with preload for critical images):\n');
+      console.log('\n📝 Example HTML usage (preload):\n');
       console.log(generateEnhancedPictureElement(files[0], 'Hero Image', 'hero-image', 1200, 800, true, true));
-      console.log('\n📝 Example HTML usage (lazy loading):\n');
+      console.log('\n📝 Example HTML usage (lazy):\n');
       console.log(generateEnhancedPictureElement(files[0], 'Gallery Image', 'gallery-image'));
     }
 
@@ -381,7 +340,6 @@ if ('serviceWorker' in navigator) {
     .catch(err => console.log('Image SW registration failed'));
 }
 </script>`);
-
   } catch (error) {
     console.error('❌ Optimization error:', error.message);
   }
