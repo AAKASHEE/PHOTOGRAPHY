@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { Menu, X, Camera } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ModeToggle } from '@/components/mode-toggle'
+import BlurText from '@/components/BlurText'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -31,22 +32,35 @@ const Navbar = () => {
   ]
 
   return (
-    <header 
+    <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled ? 'bg-background/80 backdrop-blur-md border-b' : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
+          {/* Logo with BlurText Animation */}
           <Link href="/" className="flex items-center space-x-2">
             <Camera className="h-6 w-6" />
-            <span className="font-playfair text-xl md:text-2xl font-medium">SNapDart</span>
+            <BlurText
+              text="SNapDart"
+              delay={750}
+              animateBy="letters"
+              direction="top"
+              className="font-playfair text-xl md:text-2xl font-medium"
+              animationFrom={{ filter: 'blur(10px)', opacity: 0, y: -50 }}
+              animationTo={[
+                { filter: 'blur(5px)', opacity: 0.5, y: 5 },
+                { filter: 'blur(0px)', opacity: 1, y: 0 },
+              ]}
+              stepDuration={0.30}
+            />
           </Link>
 
-          {/* Desktop Menu */}
+          {/* Desktop Nav */}
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <Link 
+              <Link
                 key={link.name}
                 href={link.href}
                 className={`text-sm hover:text-primary transition-colors ${
@@ -58,6 +72,7 @@ const Navbar = () => {
             ))}
           </nav>
 
+          {/* Desktop Right Side */}
           <div className="hidden md:flex items-center space-x-4">
             <ModeToggle />
             <Button size="sm">Client Login</Button>
@@ -83,7 +98,7 @@ const Navbar = () => {
           </div>
           <nav className="flex flex-col items-center justify-center h-full space-y-8">
             {navLinks.map((link) => (
-              <Link 
+              <Link
                 key={link.name}
                 href={link.href}
                 className={`text-lg hover:text-primary transition-colors ${
