@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { ThemeProvider } from '@/components/theme-provider';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
+import CustomCursor from '@/components/CustomCursor';
 
 // ✅ Define the image path once
 const IMAGE_PATH = '/img/b.png';
@@ -91,6 +92,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans">
+        <CustomCursor />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
