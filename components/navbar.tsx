@@ -42,19 +42,21 @@ const Navbar = () => {
           {/* Logo with BlurText Animation */}
           <Link href="/" className="flex items-center space-x-2">
             <Camera className="h-6 w-6" />
-            <BlurText
-              text="SNapDart"
-              delay={750}
-              animateBy="letters"
-              direction="top"
-              className="font-playfair text-xl md:text-2xl font-medium"
-              animationFrom={{ filter: 'blur(10px)', opacity: 0, y: -50 }}
-              animationTo={[
-                { filter: 'blur(5px)', opacity: 0.5, y: 5 },
-                { filter: 'blur(0px)', opacity: 1, y: 0 },
-              ]}
-              stepDuration={0.30}
-            />
+             <BlurText
+            text="SNapDart"
+            delay={750}
+            animateBy="letters"
+            direction="top"
+            className="font-playfair text-xl md:text-2xl font-medium"
+            animationFrom={{ filter: 'blur(10px)', opacity: 0, y: -50 }}
+            animationTo={[
+              { filter: 'blur(5px)', opacity: 0.5, y: 5 },
+              { filter: 'blur(0px)', opacity: 1, y: 0 },
+            ]}
+            stepDuration={0.35}
+            onAnimationComplete={() => {}} // 🛠️ <-- Add this line
+          />
+
           </Link>
 
           {/* Desktop Nav */}
