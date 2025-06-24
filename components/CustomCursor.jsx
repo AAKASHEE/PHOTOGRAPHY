@@ -10,11 +10,15 @@ export default function CustomCursor() {
   const isScrolledRef = useRef(false);
   const animationIdRef = useRef(null);
   const lastTimeRef = useRef(0);
+  const isScrollingRef = useRef(false);
+  const scrollTimeoutRef = useRef(null);
 
-  // Optimized animation with velocity-based smoothing and frame rate throttling
+  // Optimized animation with scroll-aware performance
   const animateCursor = useCallback((currentTime) => {
-    // Throttle to ~60fps max
-    if (currentTime - lastTimeRef.current < 16) {
+    // Dynamic frame rate based on scroll state
+    const frameDelay = isScrollingRef.current ? 8 : 16; // Higher FPS during scroll
+    
+    if (currentTime - lastTimeRef.current < frameDelay) {
       animationIdRef.current = requestAnimationFrame(animateCursor);
       return;
     }
@@ -26,9 +30,9 @@ export default function CustomCursor() {
     const dx = targetRef.current.x - positionRef.current.x;
     const dy = targetRef.current.y - positionRef.current.y;
     
-    // Use velocity-based smoothing for more natural movement
-    const friction = 0.85;
-    const acceleration = 0.08;
+    // Adjust smoothing based on scroll state
+    const friction = isScrollingRef.current ? 0.92 : 0.85; // More responsive during scroll
+    const acceleration = isScrollingRef.current ? 0.12 : 0.08; // Faster catch-up during scroll
     
     velocityRef.current.x = velocityRef.current.x * friction + dx * acceleration;
     velocityRef.current.y = velocityRef.current.y * friction + dy * acceleration;
@@ -36,46 +40,68 @@ export default function CustomCursor() {
     positionRef.current.x += velocityRef.current.x;
     positionRef.current.y += velocityRef.current.y;
     
-    // Only update transform if movement is significant (avoid micro-updates)
-    if (Math.abs(velocityRef.current.x) > 0.01 || Math.abs(velocityRef.current.y) > 0.01) {
-      // Use GPU-accelerated transform with will-change
-      cursor.style.transform = `translate3d(${positionRef.current.x}px, ${positionRef.current.y}px, 0)`;
-    }
+    // Use transform3d with subpixel precision for ultra-smooth movement
+    const x = Math.round(positionRef.current.x * 100) / 100;
+    const y = Math.round(positionRef.current.y * 100) / 100;
     
-    // Continue animation only if there's significant movement
-    if (Math.abs(dx) > 0.5 || Math.abs(dy) > 0.5 || 
-        Math.abs(velocityRef.current.x) > 0.1 || Math.abs(velocityRef.current.y) > 0.1) {
+    // Batch DOM updates and use GPU-optimized transform
+    cursor.style.transform = `translate3d(${x}px, ${y}px, 0) scale(1)`;
+    
+    // Continue animation with dynamic threshold based on scroll state
+    const threshold = isScrollingRef.current ? 0.3 : 0.5;
+    const velocityThreshold = isScrollingRef.current ? 0.05 : 0.1;
+    
+    if (Math.abs(dx) > threshold || Math.abs(dy) > threshold || 
+        Math.abs(velocityRef.current.x) > velocityThreshold || 
+        Math.abs(velocityRef.current.y) > velocityThreshold) {
       animationIdRef.current = requestAnimationFrame(animateCursor);
     } else {
-      // Stop animation when cursor is stable
       animationIdRef.current = null;
     }
   }, []);
 
-  // Debounced scroll handler
+  // Highly optimized scroll handler with scroll state management
   const handleScroll = useCallback(() => {
+    // Mark as scrolling for performance adjustments
+    isScrollingRef.current = true;
+    
+    // Clear existing timeout
+    if (scrollTimeoutRef.current) {
+      clearTimeout(scrollTimeoutRef.current);
+    }
+    
+    // Reset scrolling state after scroll ends
+    scrollTimeoutRef.current = setTimeout(() => {
+      isScrollingRef.current = false;
+    }, 150);
+    
+    // Efficient scroll state check
     const scrolled = window.scrollY > 50;
     if (scrolled !== isScrolledRef.current) {
       isScrolledRef.current = scrolled;
       const cursor = cursorRef.current;
       if (cursor) {
-        // Use toggleAttribute for better performance than classList
-        cursor.classList.toggle('scrolled-cursor', scrolled);
+        // Use requestAnimationFrame for smooth class updates
+        requestAnimationFrame(() => {
+          cursor.classList.toggle('scrolled-cursor', scrolled);
+        });
       }
     }
   }, []);
 
-  // Optimized mouse move handler with movement threshold
+  // Ultra-optimized mouse move handler for scroll scenarios
   const handleMouseMove = useCallback((e) => {
     const newX = e.clientX;
     const newY = e.clientY;
     
-    // Only update if mouse moved significantly
-    if (Math.abs(newX - targetRef.current.x) > 1 || 
-        Math.abs(newY - targetRef.current.y) > 1) {
+    // Reduced threshold during scrolling for more responsive feel
+    const threshold = isScrollingRef.current ? 0.5 : 1;
+    
+    if (Math.abs(newX - targetRef.current.x) > threshold || 
+        Math.abs(newY - targetRef.current.y) > threshold) {
       targetRef.current = { x: newX, y: newY };
       
-      // Start animation if not already running
+      // Always ensure animation runs during mouse movement
       if (!animationIdRef.current) {
         animationIdRef.current = requestAnimationFrame(animateCursor);
       }
@@ -128,6 +154,11 @@ export default function CustomCursor() {
       document.removeEventListener('mouseleave', handleMouseLeave);
       document.removeEventListener('mouseenter', handleMouseEnter);
       window.removeEventListener('scroll', handleScroll);
+      
+      // Clean up timeouts and animation frames
+      if (scrollTimeoutRef.current) {
+        clearTimeout(scrollTimeoutRef.current);
+      }
       
       if (animationIdRef.current) {
         cancelAnimationFrame(animationIdRef.current);

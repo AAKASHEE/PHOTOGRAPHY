@@ -5,7 +5,6 @@ import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import CustomCursor from '@/components/CustomCursor';
 
-// ✅ Define the image path once
 const IMAGE_PATH = '/img/b.png';
 
 export const metadata: Metadata = {
@@ -61,6 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
@@ -68,11 +68,12 @@ export default function RootLayout({
           rel="stylesheet"
         />
 
+        {/* Theme and Tiles */}
         <meta name="theme-color" content="#000000" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {/* ✅ Use shared IMAGE_PATH here too */}
+        {/* Structured Data for SEO */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -92,7 +93,9 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans">
+        {/* 👇 Custom Cursor Active Across All Pages */}
         <CustomCursor />
+
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
