@@ -1,8 +1,12 @@
+"use client";
+
 import HeroCarousel from '@/components/hero-carousel'
 import PortfolioGallery from '@/components/portfolio-gallery'
 import TestimonialsCarousel from '@/components/testimonials-carousel'
 import ServicesSection from '@/components/services-section'
 import { ParallaxSection, Reveal } from '@/components/parallax-section'
+import BlurText from "../components/BlurText"
+import Particles from '../components/Particles'
 
 export default function Home() {
   return (
@@ -15,12 +19,16 @@ export default function Home() {
             <Reveal>
               <h2 className="font-playfair text-3xl md:text-4xl mb-4">Welcome to SNapDart Photography</h2>
             </Reveal>
-            <Reveal delay={0.2}>
-              <p className="text-muted-foreground">
-                We capture life&apos;s most precious moments through the artistry of photography.
-                From stunning landscapes to intimate portraits, our passion is preserving your memories in timeless images.
-              </p>
-            </Reveal>
+            
+            <BlurText
+              text="We capture life's most precious moments through the artistry of photography. From stunning landscapes to intimate portraits, our passion is preserving your memories in timeless images."
+              delay={100}
+              className="text-muted-foreground text-lg leading-relaxed"
+              animateBy="words"
+              direction="top"
+              threshold={0.1}
+              stepDuration={0.4}
+            />
           </div>
           
           <ParallaxSection className="mb-16">
@@ -76,14 +84,36 @@ export default function Home() {
         </div>
       </section>
       
-      <ParallaxSection speed={0.05} className="relative h-[500px] overflow-hidden">
+      <section className="relative h-[500px] overflow-hidden">
+        {/* Background Image */}
         <img 
           src="https://images.pexels.com/photos/1906794/pexels-photo-1906794.jpeg" 
           alt="Artistic photography background" 
           className="absolute inset-0 w-full h-full object-cover"
+          style={{ zIndex: 0 }}
         />
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+        
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/60" style={{ zIndex: 1 }} />
+        
+        {/* Particle Background */}
+        <div className="absolute inset-0" style={{ zIndex: 2 }}>
+          <Particles
+            particleCount={150}
+            particleSpread={8}
+            speed={0.05}
+            particleColors={["#ffffff", "#f0f0f0", "#e0e0e0"]}
+            alphaParticles={true}
+            particleBaseSize={80}
+            sizeRandomness={0.8}
+            cameraDistance={15}
+            disableRotation={false}
+            className="w-full h-full"
+          />
+        </div>
+        
+        {/* Content */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4" style={{ zIndex: 3 }}>
           <Reveal>
             <h2 className="font-playfair text-3xl md:text-5xl mb-6 text-center max-w-3xl">Let&apos;s Create Something Beautiful Together</h2>
           </Reveal>
@@ -98,7 +128,7 @@ export default function Home() {
             </a>
           </Reveal>
         </div>
-      </ParallaxSection>
+      </section>
     </>
   )
 }

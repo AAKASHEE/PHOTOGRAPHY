@@ -1,6 +1,9 @@
+"use client";
+
 import Image from 'next/image'
 import { Camera, Award, Clock, Users } from 'lucide-react'
 import { Reveal, ParallaxSection } from '@/components/parallax-section'
+import ProfileCard from '../../components/ProfileCard'; 
 
 export default function AboutPage() {
   return (
@@ -100,63 +103,60 @@ export default function AboutPage() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Reveal delay={0.1}>
-                <div className="bg-card rounded-lg overflow-hidden shadow-md">
-                  <div className="relative h-80">
-                    <Image 
-                      src="/IMG_2434.jpg" 
-                      alt="AAKASHE" 
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-medium mb-1">AAKASHE</h3>
-                    <p className="text-muted-foreground mb-4">Founder & Lead Photographer</p>
-                    <p className="text-sm">
-                      Specializing in landscape and portrait photography, AAKASHE has received multiple international awards for his distinctive visual style.
-                    </p>
-                  </div>
-                </div>
+                <ProfileCard
+                  avatarUrl="/IMG_2434.jpg"
+                  miniAvatarUrl="/IMG_2434.jpg"
+                  name="AAKASHE"
+                  title="Founder & Lead Photographer"
+                  handle="aakaas.he"
+                  status="Available"
+                  contactText="Contact"
+                  showUserInfo={true}
+                  enableTilt={true}
+                  onContactClick={() => {
+                    // Handle contact click for AAKASHE
+                    console.log('Contact AAKASHE clicked');
+                    // You can add your contact logic here
+                  }}
+                />
               </Reveal>
-              
+
               <Reveal delay={0.2}>
-                <div className="bg-card rounded-lg overflow-hidden shadow-md">
-                  <div className="relative h-80">
-                    <Image 
-                      src="/IMG_2388.jpg" 
-                      alt="Arshia Sharma" 
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-medium mb-1">Arshia Sharma</h3>
-                    <p className="text-muted-foreground mb-4">Lead Photographer</p>
-                    <p className="text-sm">
-                      With an eye for emotional moments, Arshia has documented over 20+ sessions, creating timeless memories for couples worldwide.
-                    </p>
-                  </div>
-                </div>
+                <ProfileCard
+                  avatarUrl="/IMG_2388.jpg"
+                  miniAvatarUrl="/IMG_2388.jpg"
+                  name="Arshia Sharma"
+                  title="Lead Photographer"
+                  handle="_arshi.a__"
+                  status="Available"
+                  contactText="Contact"
+                  showUserInfo={true}
+                  enableTilt={true}
+                  onContactClick={() => {
+                    // Handle contact click for Arshia
+                    console.log('Contact Arshia clicked');
+                    // You can add your contact logic here
+                  }}
+                />
               </Reveal>
-              
+
               <Reveal delay={0.3}>
-                <div className="bg-card rounded-lg overflow-hidden shadow-md">
-                  <div className="relative h-80">
-                    <Image 
-                      src="FFF" 
-                      alt="bla bla" 
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-medium mb-1">bla bla</h3>
-                    <p className="text-muted-foreground mb-4">Commercial Photographer</p>
-                    <p className="text-sm">
-                      Former advertising executive turned photographer, Marcus brings strategic thinking and creative direction to commercial projects.
-                    </p>
-                  </div>
-                </div>
+                <ProfileCard
+                  avatarUrl="/placeholder-avatar.jpg" // Replace with actual image path
+                  miniAvatarUrl="/placeholder-avatar.jpg"
+                  name=""
+                  title="Commercial Photographer"
+                  handle=""
+                  status="Available"
+                  contactText="Contact"
+                  showUserInfo={true}
+                  enableTilt={true}
+                  onContactClick={() => {
+                    // Handle contact click for Marcus
+                    console.log('Contact Marcus clicked');
+                    // You can add your contact logic here
+                  }}
+                />
               </Reveal>
             </div>
           </div>
