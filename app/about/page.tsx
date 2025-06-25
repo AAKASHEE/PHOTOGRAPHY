@@ -29,6 +29,7 @@ export default function AboutPage() {
                   alt="Photographer at work" 
                   fill
                   className="object-cover"
+                  priority
                 />
               </div>
             </Reveal>
@@ -38,13 +39,13 @@ export default function AboutPage() {
                 <h2 className="font-playfair text-3xl mb-6">Our Story</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    SNapDart Photography was founded in 2025 by AAKASHE with a simple mission: to capture life&apos;s most story telling each of our photographs portrait.
+                    SNapDart Photography was founded in 2025 by Aakashe with a simple mission: to capture life&apos;s most precious moments through storytelling in each of our photographs.
                   </p>
                   <p>
                     What began as a solo venture has grown into a team of talented photographers, each bringing their unique perspective and specialized skills to our collective work.
                   </p>
                   <p>
-                    Over the years, we&apos;ve had the privilege of working with many of clients, from couples celebrating their wedding day to brands seeking to elevate their visual presence.
+                    Over the years, we&apos;ve had the privilege of working with many clients, from couples celebrating their wedding day to brands seeking to elevate their visual presence.
                   </p>
                   <p>
                     Our approach combines technical excellence with a deeply personal touch. We believe that the best photographs emerge when subjects feel comfortable and authentic, allowing us to capture genuine emotions and connections.
@@ -71,7 +72,7 @@ export default function AboutPage() {
                   <Award className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-medium mb-2">A+</h3>
-                <p className="text-muted-foreground">Industry According</p>
+                <p className="text-muted-foreground">Industry Recognition</p>
               </div>
             </Reveal>
             
@@ -103,10 +104,10 @@ export default function AboutPage() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Reveal delay={0.1}>
-                                <ProfileCard
+                <ProfileCard
                   avatarUrl="/IMG_2434.jpg"
                   miniAvatarUrl="/IMG_2434.jpg"
-                  name="AAKASHE"
+                  name="Aakashe"
                   title="Founder & Lead Photographer"
                   handle="aakaas.he"
                   status="Available"
@@ -116,9 +117,8 @@ export default function AboutPage() {
                   behindGradient="linear-gradient(to bottom, #000000, #434343)"
                   innerGradient="linear-gradient(to right, #f5f7fa, #c3cfe2)"
                   onContactClick={() => {
-                    console.log('Contact AAKASHE clicked');
+                    console.log('Contact Aakashe clicked');
                   }}
-                
                 />
               </Reveal>
 
@@ -136,20 +136,18 @@ export default function AboutPage() {
                   behindGradient="linear-gradient(to bottom, #000000, #434343)"
                   innerGradient="linear-gradient(to right, #f5f7fa, #c3cfe2)"
                   onContactClick={() => {
-                    // Handle contact click for Arshia
                     console.log('Contact Arshia clicked');
-                    // You can add your contact logic here
                   }}
                 />
               </Reveal>
 
               <Reveal delay={0.3}>
                 <ProfileCard
-                  avatarUrl="/placeholder-avatar.jpg" // Replace with actual image path
+                  avatarUrl="/placeholder-avatar.jpg"
                   miniAvatarUrl="/placeholder-avatar.jpg"
-                  name=""
+                  name="Marcus"
                   title="Commercial Photographer"
-                  handle=""
+                  handle="marcus_photos"
                   status="Available"
                   contactText="Contact"
                   showUserInfo={true}
@@ -157,9 +155,7 @@ export default function AboutPage() {
                   behindGradient="linear-gradient(to bottom, #000000, #434343)"
                   innerGradient="linear-gradient(to right, #f5f7fa, #c3cfe2)"
                   onContactClick={() => {
-                    // Handle contact click for Marcus
                     console.log('Contact Marcus clicked');
-                    // You can add your contact logic here
                   }}
                 />
               </Reveal>
@@ -230,10 +226,11 @@ export default function AboutPage() {
       </section>
       
       <ParallaxSection speed={0.05} className="relative h-[400px] overflow-hidden">
-        <img 
+        <Image 
           src="https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg" 
           alt="Camera equipment" 
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
