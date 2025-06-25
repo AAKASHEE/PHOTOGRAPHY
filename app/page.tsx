@@ -21,18 +21,36 @@ export default function Home() {
               <h2 className="font-playfair text-3xl md:text-4xl mb-4">Welcome to SnapDart Photography</h2>
             </Reveal>
             
+            <div className="max-w-2xl mx-auto">
               <BlurText
-              text="We capture life's most precious moments through the artistry of photography. From stunning landscapes to intimate portraits, our passion is preserving your memories in timeless images."
-              delay={100}
-              className="text-muted-foreground text-lg leading-relaxed"
-              animateBy="words"  // Changed to plural
-              direction="top"
-              threshold={0.1}
-              stepDuration={0.4}
-              animationFrom={{ opacity: 0, filter: "blur(8px)" }}
-              animationTo={[{ opacity: 1, filter: "blur(0px)" }]} // Wrapped in array
-            />
+                text="We capture life's most precious moments through the artistry of photography. From stunning landscapes to intimate portraits, our passion is preserving your memories in timeless images."
+                delay={50}  // Reduced delay between words for faster cascade
+                className="text-muted-foreground text-lg leading-relaxed"
+                animateBy="words"
+                direction="top"
+                threshold={0.05}  // More sensitive trigger
+                stepDuration={0.6}  // Longer duration for smoother effect
+                animationFrom={{
+                  opacity: 0,
+                  filter: "blur(12px)",
+                  y: 20  // Stronger initial offset
+                }}
+                animationTo={[
+                  {
+                    opacity: 0.7,
+                    filter: "blur(4px)",
+                    y: 5,  // Intermediate state
+                  },
+                  {
+                    opacity: 1,
+                    filter: "blur(0px)",
+                    y: 0,  // Final state
+                  }
+                ]}
+                easing={(t) => t * t * (3 - 2 * t)}  // Smoother step easing function
+              />
             </div>
+          </div>
           
           <ParallaxSection className="mb-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
