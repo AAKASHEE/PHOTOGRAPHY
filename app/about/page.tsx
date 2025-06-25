@@ -103,7 +103,7 @@ export default function AboutPage() {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Reveal delay={0.1}>
-                <ProfileCard
+                                <ProfileCard
                   avatarUrl="/IMG_2434.jpg"
                   miniAvatarUrl="/IMG_2434.jpg"
                   name="AAKASHE"
@@ -113,11 +113,12 @@ export default function AboutPage() {
                   contactText="Contact"
                   showUserInfo={true}
                   enableTilt={true}
+                  behindGradient="linear-gradient(to bottom, #000000, #434343)"
+                  innerGradient="linear-gradient(to right, #f5f7fa, #c3cfe2)"
                   onContactClick={() => {
-                    // Handle contact click for AAKASHE
                     console.log('Contact AAKASHE clicked');
-                    // You can add your contact logic here
                   }}
+                
                 />
               </Reveal>
 
@@ -132,6 +133,8 @@ export default function AboutPage() {
                   contactText="Contact"
                   showUserInfo={true}
                   enableTilt={true}
+                  behindGradient="linear-gradient(to bottom, #000000, #434343)"
+                  innerGradient="linear-gradient(to right, #f5f7fa, #c3cfe2)"
                   onContactClick={() => {
                     // Handle contact click for Arshia
                     console.log('Contact Arshia clicked');
