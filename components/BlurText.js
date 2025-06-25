@@ -4,14 +4,17 @@ import { motion } from 'framer-motion';
 import { useEffect, useRef, useState, useMemo } from 'react';
 
 const buildKeyframes = (from, steps) => {
+  // Ensure steps is always an array
+  const stepsArray = Array.isArray(steps) ? steps : [steps];
+  
   const keys = new Set([
     ...Object.keys(from),
-    ...steps.flatMap((s) => Object.keys(s)),
+    ...stepsArray.flatMap((s) => Object.keys(s)),
   ]);
 
   const keyframes = {};
   keys.forEach((k) => {
-    keyframes[k] = [from[k], ...steps.map((s) => s[k])];
+    keyframes[k] = [from[k], ...stepsArray.map((s) => s[k])];
   });
   return keyframes;
 };

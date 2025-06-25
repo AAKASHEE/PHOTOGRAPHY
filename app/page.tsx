@@ -1,12 +1,13 @@
 "use client";
 
-import HeroCarousel from '@/components/hero-carousel'
-import PortfolioGallery from '@/components/portfolio-gallery'
-import TestimonialsCarousel from '@/components/testimonials-carousel'
-import ServicesSection from '@/components/services-section'
-import { ParallaxSection, Reveal } from '@/components/parallax-section'
-import BlurText from "../components/BlurText"
-import Particles from '../components/Particles'
+import HeroCarousel from '@/components/hero-carousel';
+import PortfolioGallery from '@/components/portfolio-gallery';
+import TestimonialsCarousel from '@/components/testimonials-carousel';
+import ServicesSection from '@/components/services-section';
+import { ParallaxSection, Reveal } from '@/components/parallax-section';
+import BlurText from "../components/BlurText";
+import Particles from '../components/Particles';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -17,19 +18,21 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <Reveal>
-              <h2 className="font-playfair text-3xl md:text-4xl mb-4">Welcome to SNapDart Photography</h2>
+              <h2 className="font-playfair text-3xl md:text-4xl mb-4">Welcome to SnapDart Photography</h2>
             </Reveal>
             
-            <BlurText
+              <BlurText
               text="We capture life's most precious moments through the artistry of photography. From stunning landscapes to intimate portraits, our passion is preserving your memories in timeless images."
               delay={100}
               className="text-muted-foreground text-lg leading-relaxed"
-              animateBy="words"
+              animateBy="words"  // Changed to plural
               direction="top"
               threshold={0.1}
               stepDuration={0.4}
+              animationFrom={{ opacity: 0, filter: "blur(8px)" }}
+              animationTo={[{ opacity: 1, filter: "blur(0px)" }]} // Wrapped in array
             />
-          </div>
+            </div>
           
           <ParallaxSection className="mb-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -46,10 +49,12 @@ export default function Home() {
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden">
                 <Reveal direction="right">
-                  <img 
+                  <Image 
                     src="/IMG_2466.jpg" 
                     alt="Photographer working" 
-                    className="absolute inset-0 w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    priority
                   />
                 </Reveal>
               </div>
@@ -86,10 +91,12 @@ export default function Home() {
       
       <section className="relative h-[500px] overflow-hidden">
         {/* Background Image */}
-        <img 
+        <Image 
           src="https://images.pexels.com/photos/1906794/pexels-photo-1906794.jpeg" 
           alt="Artistic photography background" 
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          className="object-cover"
+          priority
           style={{ zIndex: 0 }}
         />
         
@@ -130,5 +137,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }
