@@ -54,7 +54,6 @@ const Navbar = () => {
               { filter: 'blur(0px)', opacity: 1, y: 0 },
             ]}
             stepDuration={0.35}
-            onAnimationComplete={() => {}} // 🛠️ <-- Add this line
           />
 
           </Link>
