@@ -113,7 +113,7 @@ export default function ServicesPage() {
                   </div>
                   <CardHeader>
                     <CardTitle>Wedding Photography</CardTitle>
-                    <CardDescription>Starting from $2,500</CardDescription>
+                    <CardDescription>Starting from ₹25,000</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p className="mb-4">
@@ -156,7 +156,7 @@ export default function ServicesPage() {
                   </div>
                   <CardHeader>
                     <CardTitle>Portrait Sessions</CardTitle>
-                    <CardDescription>Starting from $350</CardDescription>
+                    <CardDescription>Starting from ₹3500</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p className="mb-4">
@@ -199,7 +199,7 @@ export default function ServicesPage() {
                   </div>
                   <CardHeader>
                     <CardTitle>Commercial Photography</CardTitle>
-                    <CardDescription>Starting from $800</CardDescription>
+                    <CardDescription>Starting from ₹8000</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p className="mb-4">
@@ -245,7 +245,7 @@ export default function ServicesPage() {
                 </div>
                 <CardHeader>
                   <CardTitle>Event Coverage</CardTitle>
-                  <CardDescription>Starting from $500</CardDescription>
+                  <CardDescription>Starting from ₹5000</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="mb-4">
@@ -284,7 +284,7 @@ export default function ServicesPage() {
                 </div>
                 <CardHeader>
                   <CardTitle>Photography Workshops</CardTitle>
-                  <CardDescription>Starting from $250</CardDescription>
+                  <CardDescription>Starting from ₹1500</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="mb-4">

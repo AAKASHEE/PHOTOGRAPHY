@@ -42,7 +42,7 @@ export default function ContactPage() {
                         <h3 className="font-medium mb-1">Studio Address</h3>
                         <address className="not-italic text-muted-foreground">
                           <p>5th Cross Road, Kumaraswamy Layout</p>
-                          <p>Bengaluru, BLR, 560078</p>
+                          <p>Bengaluru, Blr, 560078</p>
                         </address>
                       </div>
                     </div>

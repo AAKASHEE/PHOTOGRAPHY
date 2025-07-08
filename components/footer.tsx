@@ -96,7 +96,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="/services" className="text-muted-foreground hover:text-primary transition-colors">
-                  Commercial Photography
+                  Commercial Photography 
                 </Link>
               </li>
               <li>
@@ -116,7 +116,7 @@ const Footer = () => {
             <h3 className="font-medium text-base mb-4">Contact</h3>
             <address className="not-italic text-muted-foreground">
               <p>5th Cross Road,Kumaraswamy Layout</p>
-              <p>Bengaluru,BLR,560078</p>
+              <p>Bengaluru,Blr,560078</p>
               <p className="mt-2">aakashpatra253@gmail.com</p>
               <p>+91 (886) 165-3961</p>
             </address>

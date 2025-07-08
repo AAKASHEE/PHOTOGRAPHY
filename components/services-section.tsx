@@ -19,21 +19,21 @@ const services = [
     title: 'Wedding Photography',
     description: 'Capture the magic of your special day with stunning, emotional photography that tells your unique love story.',
     image: '/img/wedding.png',
-    price: 'From $2,500',
+    price: 'From ₹25,000',
   },
   {
     id: 2,
     title: 'Portrait Sessions',
     description: 'Professional portraits that capture your authentic self, perfect for personal branding or family keepsakes.',
     image: '/portratit.png',
-    price: 'From $350',
+    price: 'From ₹3500',
   },
   {
     id: 3,
     title: 'Commercial Photography',
     description: 'Elevate your brand with high-quality images that showcase your products and services in their best light.',
     image: '/commerial.png',
-    price: 'From $800',
+    price: 'From ₹8000',
   },
 ]
 

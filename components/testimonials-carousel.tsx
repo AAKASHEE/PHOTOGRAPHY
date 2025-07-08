@@ -10,23 +10,23 @@ import { cn } from '@/lib/utils'
 const testimonials = [
   {
     id: 1,
-    name: 'Emily Johnson',
+    name: 'Riya Jha',
     role: 'Bride',
-    image: 'https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg',
+    image: '/img/riya.png',
     quote: 'The photographs captured our wedding day perfectly. Every time we look at them, we relive those beautiful moments all over again.',
   },
   {
     id: 2,
-    name: 'Michael Chen',
+    name: 'Mrunal Trivedi',
     role: 'Business Owner',
-    image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg',
+    image: '/img/mrunal.png',
     quote: 'The commercial photography for our brand was exceptional. The images elevated our marketing materials and helped us stand out from competitors.',
   },
   {
     id: 3,
-    name: 'Sarah Williams',
+    name: 'Naveen Gowda',
     role: 'Portrait Client',
-    image: 'https://images.pexels.com/photos/3671083/pexels-photo-3671083.jpeg',
+    image: '/img/naveen.png',
     quote: 'I\'ve never felt so comfortable during a photoshoot. The portraits captured my personality in a way I didn\'t think was possible.',
   },
 ]
@@ -99,7 +99,7 @@ export default function TestimonialsCarousel() {
               />
             </div>
             <p className="text-lg md:text-xl mb-6 italic">
-              "{testimonials[current].quote}"
+              &quot;{testimonials[current].quote}&quot;
             </p>
             <h4 className="font-medium">{testimonials[current].name}</h4>
             <p className="text-sm text-muted-foreground">{testimonials[current].role}</p>
