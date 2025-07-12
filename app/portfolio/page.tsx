@@ -336,7 +336,23 @@ const portfolioItems = [
     image:'/img/IMG_5348.JPG',
     aspectRatio:'aspect-square',
   },
+ 
+  {
+    id:49,
+    title:'',
+    category:'',
+    image:'/img/IMG_0758.jpg',
+    aspectRatio:'aspect-square',
+  },
+  {
+    id:50,
+    title:'',
+    category:'',
+    image:'/img/IMG_0819.jpg',
+    aspectRatio:'aspect-square',
+  },
 ]
+
 
 const categories = [
   { id: 'all', name: 'All' },

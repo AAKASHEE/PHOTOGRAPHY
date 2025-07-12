@@ -78,6 +78,27 @@ const portfolioItems = [
     category: 'Foodie',
     image: '/img/IMG_0554.jpg',
     aspectRatio: 'aspect-square',
+  },
+  {
+    id: 11,
+    title: 'Hues',
+    category: 'Event',
+    image: '/img/IMG_0821.jpg',
+    aspectRatio: 'aspect-square',
+  },
+  {
+    id: 12,
+    title: 'Ride',
+    category: 'F1',
+    image: '/img/IMG_0797.jpg',
+    aspectRatio: 'aspect-square',
+  },
+  {
+    id: 13,
+    title: 'Movie',
+    category: 'F1',
+    image: '/img/IMG_0802.jpg',
+    aspectRatio: 'aspect-square',
   }
 ]
 

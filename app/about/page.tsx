@@ -39,7 +39,7 @@ export default function AboutPage() {
                 <h2 className="font-playfair text-3xl mb-6">Our Story</h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    SNapDart Photography was founded in 2025 by Aakashe with a simple mission: to capture life&apos;s most precious moments through storytelling in each of our photographs.
+                      Photography was founded in 2025 by Aakashe with a simple mission: to capture life&apos;s most precious moments through storytelling in each of our photographs.
                   </p>
                   <p>
                     What began as a solo venture has grown into a team of talented photographers, each bringing their unique perspective and specialized skills to our collective work.
