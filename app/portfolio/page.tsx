@@ -351,7 +351,22 @@ const portfolioItems = [
     image:'/img/IMG_0819.jpg',
     aspectRatio:'aspect-square',
   },
+  {
+    id:51,
+    title:'',
+    category:'',
+    image:'/img/IMG_007.jpeg',
+    aspectRatio:'aspect-square',
+  },
+  {
+    id:52,
+    title:'',
+    category:'',
+    image:'/img/IMG_008.jpeg',
+    aspectRatio:'aspect-square',
+  },
 ]
+
 
 
 const categories = [

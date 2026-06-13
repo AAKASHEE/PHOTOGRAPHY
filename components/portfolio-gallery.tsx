@@ -99,6 +99,13 @@ const portfolioItems = [
     category: 'F1',
     image: '/img/IMG_0802.jpg',
     aspectRatio: 'aspect-square',
+  },
+  {
+    id: 14,
+    title: 'Movie',
+    category: 'F1',
+    image: '/img/IMG_009.jpeg',
+    aspectRatio: 'aspect-square',
   }
 ]
 
