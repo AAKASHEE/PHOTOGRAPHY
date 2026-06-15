@@ -1,4 +1,3 @@
-// integrated-image-system.js
 const fs = require('fs').promises;
 const fsSync = require('fs');
 const path = require('path');
@@ -6,10 +5,10 @@ const os = require('os');
 
 // Configuration
 const CONFIG = {
-  inputDir: './public/images',
-  outputDir: './public/images/optimized',
+  publicDir: './public',
+  outputBaseDir: './public/optimized',
   maxConcurrency: Math.min(os.cpus().length, 4),
-  supportedFormats: /\.(jpg|jpeg|png|webp|avif|tiff?)$/i,
+  supportedFormats: /\.(jpg|jpeg|png|webp|tiff?)$/i,
   sizes: [
     { width: 320, suffix: '-mobile', quality: 75 },
     { width: 768, suffix: '-tablet', quality: 80 },
@@ -17,7 +16,6 @@ const CONFIG = {
     { width: 1920, suffix: '-large', quality: 80 }
   ],
   formats: [
-    { ext: 'avif', quality: 70, options: { effort: 4 } },
     { ext: 'webp', quality: 80, options: {} },
     { ext: 'jpg', quality: 85, options: { mozjpeg: true } }
   ],
@@ -25,6 +23,28 @@ const CONFIG = {
   cacheStrategy: 'cache-first',
   maxCacheAge: 7 * 24 * 60 * 60 * 1000 // 7 days
 };
+
+async function getFilesRecursively(dir) {
+  const dirents = await fs.readdir(dir, { withFileTypes: true });
+  const files = await Promise.all(dirents.map((dirent) => {
+    const res = path.resolve(dir, dirent.name);
+    if (dirent.isDirectory()) {
+      // Ignore output/cache/metadata directories
+      if (
+        dirent.name === 'optimized' ||
+        dirent.name === '.next' ||
+        dirent.name === 'node_modules' ||
+        dirent.name === '.git'
+      ) {
+        return [];
+      }
+      return getFilesRecursively(res);
+    } else {
+      return res;
+    }
+  }));
+  return files.flat();
+}
 
 class ImageProcessor {
   constructor() {
@@ -53,24 +73,14 @@ class ImageProcessor {
   }
 
   async ensureDirectories() {
-    if (!fsSync.existsSync(CONFIG.inputDir)) {
-      console.log('Input directory does not exist');
+    if (!fsSync.existsSync(CONFIG.publicDir)) {
+      console.log('Public directory does not exist');
       return false;
     }
-    if (!fsSync.existsSync(CONFIG.outputDir)) {
-      await fs.mkdir(CONFIG.outputDir, { recursive: true });
+    if (!fsSync.existsSync(CONFIG.outputBaseDir)) {
+      await fs.mkdir(CONFIG.outputBaseDir, { recursive: true });
     }
     return true;
-  }
-
-  async getImageFiles() {
-    try {
-      const files = await fs.readdir(CONFIG.inputDir);
-      return files.filter(file => CONFIG.supportedFormats.test(file));
-    } catch (error) {
-      console.error('Error reading directory:', error);
-      return [];
-    }
   }
 
   async getImageMetadata(inputPath) {
@@ -88,23 +98,25 @@ class ImageProcessor {
     }
   }
 
-  async processImage(file) {
-    const inputPath = path.join(CONFIG.inputDir, file);
-    const baseName = path.parse(file).name;
-    
+  async processImage(filePath) {
+    const relativePath = path.relative(CONFIG.publicDir, filePath);
+    const outputRelDir = path.dirname(relativePath);
+    const outputDir = path.join(CONFIG.outputBaseDir, outputRelDir);
+    const baseName = path.parse(filePath).name;
+
     try {
-      const metadata = await this.getImageMetadata(inputPath);
+      const originalStats = await fs.stat(filePath);
+      const originalMtime = originalStats.mtimeMs;
+
+      const metadata = await this.getImageMetadata(filePath);
       if (!metadata) return;
 
-      const originalSize = (await fs.stat(inputPath)).size;
-      console.log(`Processing: ${file} (${metadata.width}x${metadata.height}, ${(originalSize / 1024).toFixed(1)}KB)`);
-
-      this.manifest.images[baseName] = {
+      this.manifest.images[relativePath.replace(/\\/g, '/')] = {
         original: {
           width: metadata.width,
           height: metadata.height,
           format: metadata.format,
-          size: originalSize
+          size: originalStats.size
         },
         variants: {}
       };
@@ -112,50 +124,65 @@ class ImageProcessor {
       for (const size of CONFIG.sizes) {
         if (metadata.width <= size.width) {
           if (size === CONFIG.sizes[CONFIG.sizes.length - 1]) {
-            await this.generateFormats(inputPath, baseName, size, metadata.width);
+            await this.generateFormats(filePath, outputDir, baseName, size, metadata.width, originalMtime, relativePath);
           }
           continue;
         }
-        await this.generateFormats(inputPath, baseName, size, size.width);
+        await this.generateFormats(filePath, outputDir, baseName, size, size.width, originalMtime, relativePath);
       }
 
       this.processedCount++;
       const progress = ((this.processedCount / this.totalFiles) * 100).toFixed(1);
-      console.log(`✓ Completed ${file} [${progress}%]`);
+      console.log(`✓ Completed ${relativePath} [${progress}%]`);
     } catch (error) {
-      console.error(`Error processing ${file}:`, error.message);
+      console.error(`Error processing ${relativePath}:`, error.message);
     }
   }
 
-  async generateFormats(inputPath, baseName, sizeConfig, targetWidth) {
+  async generateFormats(inputPath, outputDir, baseName, sizeConfig, targetWidth, originalMtime, relativePath) {
+    await fs.mkdir(outputDir, { recursive: true });
     const pipeline = this.sharp(inputPath)
       .resize(targetWidth, null, { withoutEnlargement: true, fastShrinkOnLoad: true });
 
     const variants = {};
+    const keyPath = relativePath.replace(/\\/g, '/');
 
     for (const format of CONFIG.formats) {
       const outputFileName = `${baseName}${sizeConfig.suffix}.${format.ext}`;
-      const outputPath = path.join(CONFIG.outputDir, outputFileName);
+      const outputPath = path.join(outputDir, outputFileName);
+
+      // Cache check
+      let shouldProcess = true;
+      try {
+        const stats = await fs.stat(outputPath);
+        if (stats.mtimeMs >= originalMtime && stats.size > 0) {
+          shouldProcess = false;
+        }
+      } catch (err) {
+        // Output file doesn't exist
+      }
 
       try {
-        let formatPipeline = pipeline.clone();
+        if (shouldProcess) {
+          let formatPipeline = pipeline.clone();
 
-        switch (format.ext) {
-          case 'avif':
-            formatPipeline = formatPipeline.avif({ quality: format.quality, ...format.options });
-            break;
-          case 'webp':
-            formatPipeline = formatPipeline.webp({ quality: format.quality, ...format.options });
-            break;
-          case 'jpg':
-            formatPipeline = formatPipeline.jpeg({ quality: format.quality, progressive: true, ...format.options });
-            break;
+          switch (format.ext) {
+            case 'webp':
+              formatPipeline = formatPipeline.webp({ quality: format.quality, ...format.options });
+              break;
+            case 'jpg':
+              formatPipeline = formatPipeline.jpeg({ quality: format.quality, progressive: true, ...format.options });
+              break;
+          }
+
+          await formatPipeline.toFile(outputPath);
         }
 
-        await formatPipeline.toFile(outputPath);
         const stats = await fs.stat(outputPath);
+        const manifestRelativePath = '/optimized/' + path.relative(CONFIG.outputBaseDir, outputPath).replace(/\\/g, '/');
+
         variants[`${sizeConfig.suffix.slice(1)}_${format.ext}`] = {
-          path: `/images/optimized/${outputFileName}`,
+          path: manifestRelativePath,
           size: stats.size,
           width: targetWidth
         };
@@ -164,8 +191,8 @@ class ImageProcessor {
       }
     }
 
-    if (!this.manifest.images[baseName].variants[sizeConfig.suffix.slice(1)]) {
-      this.manifest.images[baseName].variants[sizeConfig.suffix.slice(1)] = variants;
+    if (!this.manifest.images[keyPath].variants[sizeConfig.suffix.slice(1)]) {
+      this.manifest.images[keyPath].variants[sizeConfig.suffix.slice(1)] = variants;
     }
   }
 
@@ -191,7 +218,7 @@ class ImageProcessor {
       this.manifest.maxCacheAge = CONFIG.maxCacheAge;
 
       await fs.writeFile(
-        path.join(CONFIG.outputDir, 'manifest.json'),
+        path.join(CONFIG.outputBaseDir, 'manifest.json'),
         JSON.stringify(this.manifest, null, 2)
       );
       console.log('Generated enhanced manifest.json');
@@ -203,18 +230,24 @@ class ImageProcessor {
   async generateServiceWorker() {
     if (!CONFIG.generateServiceWorker) return;
 
-    const swContent = `
-// Auto-generated Service Worker for Image Caching
+    const imagePaths = [];
+    for (const img of Object.values(this.manifest.images)) {
+      for (const sizeVariants of Object.values(img.variants)) {
+        for (const variant of Object.values(sizeVariants)) {
+          if (variant.path) {
+            imagePaths.push(variant.path);
+          }
+        }
+      }
+    }
+
+    const swContent = `// Auto-generated Service Worker for Image Caching
 const CACHE_NAME = 'images-v${Date.now()}';
 const CACHE_STRATEGY = '${CONFIG.cacheStrategy}';
 const MAX_CACHE_AGE = ${CONFIG.maxCacheAge};
 
 const IMAGE_PATHS = [
-${Object.values(this.manifest.images).map(img =>
-  Object.values(img.variants).map(variants =>
-    Object.values(variants).map(variant => `  '${variant.path}'`).join(',\n')
-  ).join(',\n')
-).join(',\n')}
+${imagePaths.map(p => `  '${p}'`).join(',\n')}
 ];
 
 self.addEventListener('install', event => {
@@ -264,43 +297,12 @@ async function handleImageRequest(request) {
 }`;
 
     try {
-      await fs.writeFile('./public/sw-images.js', swContent);
-      console.log('Generated service worker for image caching');
+      await fs.writeFile(path.join(CONFIG.publicDir, 'sw-images.js'), swContent);
+      console.log('Generated service worker for image caching at public/sw-images.js');
     } catch (error) {
       console.error('Service worker generation error:', error.message);
     }
   }
-}
-
-function generateEnhancedPictureElement(imageName, alt = '', className = '', width = 1200, height = 800, preload = false, eager = false) {
-  const baseName = path.parse(imageName).name;
-  const loading = eager ? 'eager' : 'lazy';
-  const decoding = eager ? 'sync' : 'async';
-  const fetchPriority = preload ? 'high' : 'auto';
-
-  let preloadLinks = '';
-  if (preload) {
-    preloadLinks = `
-<link rel="preload" as="image" href="/images/optimized/${baseName}-desktop.avif" type="image/avif">
-<link rel="preload" as="image" href="/images/optimized/${baseName}-desktop.webp" type="image/webp">`;
-  }
-
-  return preloadLinks + `
-<picture${className ? ` class="${className}"` : ''}>
-  <source media="(max-width: 320px)" srcset="/images/optimized/${baseName}-mobile.avif" type="image/avif">
-  <source media="(max-width: 768px)" srcset="/images/optimized/${baseName}-tablet.avif" type="image/avif">
-  <source media="(max-width: 1200px)" srcset="/images/optimized/${baseName}-desktop.avif" type="image/avif">
-  <source srcset="/images/optimized/${baseName}-large.avif" type="image/avif">
-
-  <source media="(max-width: 320px)" srcset="/images/optimized/${baseName}-mobile.webp" type="image/webp">
-  <source media="(max-width: 768px)" srcset="/images/optimized/${baseName}-tablet.webp" type="image/webp">
-  <source media="(max-width: 1200px)" srcset="/images/optimized/${baseName}-desktop.webp" type="image/webp">
-  <source srcset="/images/optimized/${baseName}-large.webp" type="image/webp">
-
-  <img src="/images/optimized/${baseName}-desktop.jpg" alt="${alt}" class="${className}"
-       loading="${loading}" decoding="${decoding}" fetchpriority="${fetchPriority}"
-       width="${width}" height="${height}" style="max-width: 100%; height: auto;" crossorigin="anonymous">
-</picture>`;
 }
 
 async function optimizeImages() {
@@ -308,11 +310,16 @@ async function optimizeImages() {
   const processor = new ImageProcessor();
 
   try {
-    console.log('🚀 Starting enhanced image optimization with caching...');
+    console.log('🚀 Starting recursive image optimization with caching...');
     if (!(await processor.initialize())) return;
     if (!(await processor.ensureDirectories())) return;
 
-    const files = await processor.getImageFiles();
+    const allFiles = await getFilesRecursively(CONFIG.publicDir);
+    const files = allFiles.filter(file => {
+      const ext = path.extname(file);
+      return CONFIG.supportedFormats.test(ext);
+    });
+
     if (files.length === 0) {
       console.log('No images found');
       return;
@@ -324,22 +331,6 @@ async function optimizeImages() {
 
     const duration = ((Date.now() - startTime) / 1000).toFixed(2);
     console.log(`✅ Completed ${processor.processedCount} images in ${duration}s`);
-
-    if (files.length > 0) {
-      console.log('\n📝 Example HTML usage (preload):\n');
-      console.log(generateEnhancedPictureElement(files[0], 'Hero Image', 'hero-image', 1200, 800, true, true));
-      console.log('\n📝 Example HTML usage (lazy):\n');
-      console.log(generateEnhancedPictureElement(files[0], 'Gallery Image', 'gallery-image'));
-    }
-
-    console.log('\n🔧 To enable the service worker, add this to your HTML:');
-    console.log(`<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw-images.js')
-    .then(reg => console.log('Image SW registered'))
-    .catch(err => console.log('Image SW registration failed'));
-}
-</script>`);
   } catch (error) {
     console.error('❌ Optimization error:', error.message);
   }
@@ -347,7 +338,6 @@ if ('serviceWorker' in navigator) {
 
 module.exports = {
   optimizeImages,
-  generateEnhancedPictureElement,
   ImageProcessor,
   CONFIG
 };

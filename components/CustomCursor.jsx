@@ -1,8 +1,9 @@
 'use client';
 
-import { useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 export default function CustomCursor() {
+  const [isMobile, setIsMobile] = useState(true);
   const cursorRef = useRef(null);
   const positionRef = useRef({ x: 0, y: 0 });
   const targetRef = useRef({ x: 0, y: 0 });
@@ -12,6 +13,17 @@ export default function CustomCursor() {
   const lastTimeRef = useRef(0);
   const isScrollingRef = useRef(false);
   const scrollTimeoutRef = useRef(null);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      const isSmallScreen = window.innerWidth < 768;
+      setIsMobile(isTouch || isSmallScreen);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile, { passive: true });
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   // Optimized animation with scroll-aware performance
   const animateCursor = useCallback((currentTime) => {
@@ -124,6 +136,8 @@ export default function CustomCursor() {
   }, []);
 
   useEffect(() => {
+    if (isMobile) return;
+
     // Initialize position to center
     const initialX = window.innerWidth / 2;
     const initialY = window.innerHeight / 2;
@@ -165,7 +179,9 @@ export default function CustomCursor() {
         animationIdRef.current = null;
       }
     };
-  }, [handleMouseMove, handleMouseLeave, handleMouseEnter, handleScroll, animateCursor]);
+  }, [isMobile, handleMouseMove, handleMouseLeave, handleMouseEnter, handleScroll, animateCursor]);
+
+  if (isMobile) return null;
 
   return (
     <div

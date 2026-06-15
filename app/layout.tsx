@@ -4,10 +4,13 @@ import { ThemeProvider } from '@/components/theme-provider';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import CustomCursor from '@/components/CustomCursor';
+import SmoothScrollProvider from '@/components/SmoothScrollProvider';
+import PageTransition from '@/components/PageTransition';
 
 const IMAGE_PATH = '/img/b.png';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://snapdart.vercel.app'),
   title: 'SNapDart - Photography',
   description:
     'Professional photography portfolio showcasing breathtaking moments captured through the lens',
@@ -71,7 +74,7 @@ export default function RootLayout({
         {/* Theme and Tiles */}
         <meta name="theme-color" content="#000000" />
         <meta name="msapplication-TileColor" content="#000000" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
         {/* Structured Data for SEO */}
         <script
@@ -91,21 +94,40 @@ export default function RootLayout({
             }),
           }}
         />
+
+        {/* Service Worker for Image Caching */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (typeof window !== 'undefined' && 'serviceWorker' in navigator && window.location.hostname !== 'localhost') {
+                window.addEventListener('load', function() {
+                  navigator.serviceWorker.register('/sw-images.js')
+                    .then(function(reg) { console.log('Image SW registered'); })
+                    .catch(function(err) { console.log('Image SW registration failed', err); });
+                });
+              }
+            `
+          }}
+        />
       </head>
       <body className="font-sans" suppressHydrationWarning>
-        {/* 👇 Custom Cursor Active Across All Pages */}
-        <CustomCursor />
+        <SmoothScrollProvider>
+          {/* 👇 Custom Cursor Active Across All Pages */}
+          <CustomCursor />
 
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
-        </ThemeProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Navbar />
+            <main className="min-h-screen">
+              <PageTransition>{children}</PageTransition>
+            </main>
+            <Footer />
+          </ThemeProvider>
+        </SmoothScrollProvider>
       </body>
     </html>
   );

@@ -70,7 +70,8 @@ const HeroCarousel = () => {
             src={image.src}
             alt={image.alt}
             fill
-            priority={index === 0}
+            priority
+            sizes="100vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/40" />

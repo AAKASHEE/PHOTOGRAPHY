@@ -163,7 +163,7 @@ export default function PortfolioGallery() {
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
       >
         <AnimatePresence>
-          {filteredItems.map((item) => (
+          {filteredItems.map((item, index) => (
             <motion.div
               key={item.id}
               layout
@@ -180,7 +180,10 @@ export default function PortfolioGallery() {
                 src={item.image}
                 alt={item.title}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
+                loading={index < 6 ? 'eager' : 'lazy'}
+                priority={index < 3}
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300" />
               <div className="absolute inset-0 p-4 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-300">

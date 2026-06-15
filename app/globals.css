@@ -75,9 +75,60 @@
 @layer base {
   * {
     @apply border-border;
+    /* GPU-accelerate all elements that will animate */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
   }
+
+  html {
+    /* Smooth scroll for anchor links (Lenis overrides on desktop) */
+    scroll-behavior: smooth;
+    /* Prevent scroll chaining / overscroll glow on mobile */
+    overscroll-behavior: none;
+    /* iOS momentum scroll inside scrollable children */
+    -webkit-overflow-scrolling: touch;
+    /* Precise text rendering */
+    text-rendering: optimizeSpeed;
+    /* Prevent layout shift from scrollbar appearing */
+    scrollbar-gutter: stable;
+  }
+
   body {
     @apply bg-background text-foreground;
+    /* GPU layer for the whole body */
+    transform: translateZ(0);
+    /* Prevent bounce scroll on iOS body level */
+    overscroll-behavior-y: none;
+    /* Smooth font rendering */
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  /* Smooth interactive feedback on all clickable elements */
+  a, button, [role="button"] {
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* Images: GPU composited, no layout shift */
+  img, video {
+    max-width: 100%;
+    display: block;
+    image-rendering: -webkit-optimize-contrast;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  /* Reduce motion globally when user prefers it */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
 

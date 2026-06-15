@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useCallback, useMemo } from "react";
+import React, { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import "../app/ProfileCard.css";
 
 const DEFAULT_BEHIND_GRADIENT =
@@ -20,13 +20,7 @@ const clamp = (value, min = 0, max = 100) =>
 const round = (value, precision = 3) =>
   parseFloat(value.toFixed(precision));
 
-const adjust = (
-  value,
-  fromMin,
-  fromMax,
-  toMin,
-  toMax
-) =>
+const adjust = (value, fromMin, fromMax, toMin, toMax) =>
   round(toMin + ((toMax - toMin) * (value - fromMin)) / (fromMax - fromMin));
 
 const easeInOutCubic = (x) =>
@@ -52,18 +46,25 @@ const ProfileCardComponent = ({
 }) => {
   const wrapRef = useRef(null);
   const cardRef = useRef(null);
+  const [shouldTilt, setShouldTilt] = useState(false);
+
+  useEffect(() => {
+    const checkScreen = () => {
+      const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      const isSmallScreen = window.innerWidth < 768;
+      setShouldTilt(enableTilt && !isTouch && !isSmallScreen);
+    };
+    checkScreen();
+    window.addEventListener('resize', checkScreen, { passive: true });
+    return () => window.removeEventListener('resize', checkScreen);
+  }, [enableTilt]);
 
   const animationHandlers = useMemo(() => {
-    if (!enableTilt) return null;
+    if (!shouldTilt) return null;
 
     let rafId = null;
 
-    const updateCardTransform = (
-      offsetX,
-      offsetY,
-      card,
-      wrap
-    ) => {
+    const updateCardTransform = (offsetX, offsetY, card, wrap) => {
       const width = card.clientWidth;
       const height = card.clientHeight;
 
@@ -90,13 +91,7 @@ const ProfileCardComponent = ({
       });
     };
 
-    const createSmoothAnimation = (
-      duration,
-      startX,
-      startY,
-      card,
-      wrap
-    ) => {
+    const createSmoothAnimation = (duration, startX, startY, card, wrap) => {
       const startTime = performance.now();
       const targetX = wrap.clientWidth / 2;
       const targetY = wrap.clientHeight / 2;
@@ -129,7 +124,7 @@ const ProfileCardComponent = ({
         }
       },
     };
-  }, [enableTilt]);
+  }, [shouldTilt]);
 
   const handlePointerMove = useCallback(
     (event) => {
@@ -181,7 +176,7 @@ const ProfileCardComponent = ({
   );
 
   useEffect(() => {
-    if (!enableTilt || !animationHandlers) return;
+    if (!shouldTilt || !animationHandlers) return;
 
     const card = cardRef.current;
     const wrap = wrapRef.current;
@@ -215,7 +210,7 @@ const ProfileCardComponent = ({
       animationHandlers.cancelAnimation();
     };
   }, [
-    enableTilt,
+    shouldTilt,
     animationHandlers,
     handlePointerMove,
     handlePointerEnter,
@@ -223,8 +218,7 @@ const ProfileCardComponent = ({
   ]);
 
   const cardStyle = useMemo(
-    () =>
-    ({
+    () => ({
       "--icon": iconUrl ? `url(${iconUrl})` : "none",
       "--grain": grainUrl ? `url(${grainUrl})` : "none",
       "--behind-gradient": showBehindGradient

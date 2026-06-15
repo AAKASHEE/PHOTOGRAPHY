@@ -5,8 +5,11 @@ import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { Dialog, DialogContent } from '@/components/ui/dialog'
+import { Dialog as DialogOriginal, DialogContent as DialogContentOriginal } from '@/components/ui/dialog'
 import { cn } from '@/lib/utils'
+
+const Dialog = DialogOriginal as any
+const DialogContent = DialogContentOriginal as any
 
 interface PhotoItem {
   id: number
@@ -24,12 +27,12 @@ interface PhotoNavigatorProps {
   onPhotoChange: (photoId: number) => void
 }
 
-export function PhotoNavigator({ 
-  photos, 
-  isOpen, 
-  currentPhotoId, 
-  onClose, 
-  onPhotoChange 
+export function PhotoNavigator({
+  photos,
+  isOpen,
+  currentPhotoId,
+  onClose,
+  onPhotoChange
 }: PhotoNavigatorProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isLoading, setIsLoading] = useState(false)
@@ -168,7 +171,7 @@ export function PhotoNavigator({
                   onLoad={() => setIsLoading(false)}
                   priority
                 />
-                
+
                 {/* Loading indicator */}
                 {isLoading && (
                   <div className="absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
@@ -211,8 +214,8 @@ export function PhotoNavigator({
                   }}
                   className={cn(
                     "relative w-16 h-16 rounded-md overflow-hidden flex-shrink-0 transition-all",
-                    index === currentIndex 
-                      ? "ring-2 ring-white scale-110" 
+                    index === currentIndex
+                      ? "ring-2 ring-white scale-110"
                       : "opacity-60 hover:opacity-80"
                   )}
                 >

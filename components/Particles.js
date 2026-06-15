@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Renderer, Camera, Geometry, Program, Mesh } from "ogl";
 
 import '../app/Particle.css';
@@ -92,6 +92,20 @@ const Particles = ({
 }) => {
   const containerRef = useRef(null);
   const mouseRef = useRef({ x: 0, y: 0 });
+  const [adjustedCount, setAdjustedCount] = useState(particleCount);
+
+  useEffect(() => {
+    const checkScreen = () => {
+      if (window.innerWidth < 768) {
+        setAdjustedCount(Math.min(particleCount, 30));
+      } else {
+        setAdjustedCount(particleCount);
+      }
+    };
+    checkScreen();
+    window.addEventListener("resize", checkScreen, { passive: true });
+    return () => window.removeEventListener("resize", checkScreen);
+  }, [particleCount]);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -125,7 +139,7 @@ const Particles = ({
       container.addEventListener("mousemove", handleMouseMove);
     }
 
-    const count = particleCount;
+    const count = adjustedCount;
     const positions = new Float32Array(count * 3);
     const randoms = new Float32Array(count * 4);
     const colors = new Float32Array(count * 3);
@@ -211,7 +225,7 @@ const Particles = ({
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
-    particleCount,
+    adjustedCount,
     particleSpread,
     speed,
     moveParticlesOnHover,

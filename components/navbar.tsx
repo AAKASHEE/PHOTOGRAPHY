@@ -7,6 +7,7 @@ import { Menu, X, Camera } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ModeToggle } from '@/components/mode-toggle'
 import BlurText from '@/components/BlurText'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -71,14 +72,19 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ease-out ${
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-background/90 backdrop-blur-md border-b border-border/50 shadow-sm' 
-          : 'bg-transparent'
+          ? 'border-b border-border/40 shadow-lg shadow-black/5' 
+          : 'border-b border-transparent'
       }`}
       style={{
-        // Fallback for browsers that don't support backdrop-filter
-        backgroundColor: isScrolled ? 'rgba(var(--background-rgb), 0.9)' : 'transparent',
+        backdropFilter: isScrolled ? 'blur(20px) saturate(180%)' : 'blur(0px) saturate(100%)',
+        WebkitBackdropFilter: isScrolled ? 'blur(20px) saturate(180%)' : 'blur(0px) saturate(100%)',
+        backgroundColor: isScrolled
+          ? 'color-mix(in srgb, var(--background) 85%, transparent)'
+          : 'transparent',
+        transition: 'backdrop-filter 0.4s cubic-bezier(0.25,0.46,0.45,0.94), background-color 0.4s cubic-bezier(0.25,0.46,0.45,0.94), border-color 0.4s ease, box-shadow 0.4s ease',
+        willChange: 'backdrop-filter, background-color',
       }}
     >
       <div className="container mx-auto px-4 md:px-6">
@@ -126,9 +132,6 @@ const Navbar = () => {
           {/* Desktop Right Side */}
           <div className="hidden md:flex items-center space-x-4">
             <ModeToggle />
-            <Button size="sm" className="transition-transform hover:scale-105 active:scale-95">
-              Client Login
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -147,15 +150,17 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      <div 
-        className={`fixed inset-0 bg-background z-50 md:hidden transition-all duration-300 ease-in-out ${
-          isOpen 
-            ? 'opacity-100 translate-y-0' 
-            : 'opacity-0 -translate-y-full pointer-events-none'
-        }`}
-        aria-hidden={!isOpen}
-      >
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            key="mobile-menu"
+            initial={{ opacity: 0, y: -16, filter: 'blur(8px)' }}
+            animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+            exit={{ opacity: 0, y: -16, filter: 'blur(8px)' }}
+            transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="fixed inset-0 bg-background/95 backdrop-blur-xl z-50 md:hidden"
+            aria-hidden={!isOpen}
+          >
         <div className="flex justify-end p-4">
           <Button 
             variant="ghost" 
@@ -182,14 +187,10 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-          <Button 
-            className="mt-4 transition-transform hover:scale-105 active:scale-95"
-            size="lg"
-          >
-            Client Login
-          </Button>
         </nav>
-      </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   )
 }
