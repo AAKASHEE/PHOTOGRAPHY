@@ -1,0 +1,6488 @@
+{
+  "generated": "2026-06-15T11:34:26.662Z",
+  "images": {
+    "commerial.png": {
+      "original": {
+        "width": 830,
+        "height": 828,
+        "format": "png",
+        "size": 195757
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/commerial-mobile.webp",
+            "size": 5390,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/commerial-mobile.jpg",
+            "size": 11030,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/commerial-tablet.webp",
+            "size": 12778,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/commerial-tablet.jpg",
+            "size": 28991,
+            "width": 768
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/commerial-large.webp",
+            "size": 14018,
+            "width": 830
+          },
+          "large_jpg": {
+            "path": "/optimized/commerial-large.jpg",
+            "size": 31332,
+            "width": 830
+          }
+        }
+      }
+    },
+    "event.jpg": {
+      "original": {
+        "width": 3918,
+        "height": 5877,
+        "format": "jpeg",
+        "size": 1098026
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/event-mobile.webp",
+            "size": 6216,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/event-mobile.jpg",
+            "size": 10583,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/event-tablet.webp",
+            "size": 18342,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/event-tablet.jpg",
+            "size": 33819,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/event-desktop.webp",
+            "size": 32330,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/event-desktop.jpg",
+            "size": 62168,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/event-large.webp",
+            "size": 61032,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/event-large.jpg",
+            "size": 125786,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "camera_eq.jpg": {
+      "original": {
+        "width": 6934,
+        "height": 4623,
+        "format": "jpeg",
+        "size": 3963042
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/camera_eq-mobile.webp",
+            "size": 6816,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/camera_eq-mobile.jpg",
+            "size": 10145,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/camera_eq-tablet.webp",
+            "size": 27776,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/camera_eq-tablet.jpg",
+            "size": 45948,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/camera_eq-desktop.webp",
+            "size": 60662,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/camera_eq-desktop.jpg",
+            "size": 103032,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/camera_eq-large.webp",
+            "size": 123142,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/camera_eq-large.jpg",
+            "size": 231977,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "eyes.jpg": {
+      "original": {
+        "width": 2832,
+        "height": 4240,
+        "format": "jpeg",
+        "size": 3147308
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/eyes-mobile.webp",
+            "size": 27698,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/eyes-mobile.jpg",
+            "size": 29810,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/eyes-tablet.webp",
+            "size": 132006,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/eyes-tablet.jpg",
+            "size": 152889,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/eyes-desktop.webp",
+            "size": 284724,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/eyes-desktop.jpg",
+            "size": 337566,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/eyes-large.webp",
+            "size": 811290,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/eyes-large.jpg",
+            "size": 822739,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/b.png": {
+      "original": {
+        "width": 1024,
+        "height": 1024,
+        "format": "png",
+        "size": 1171671
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/b-mobile.webp",
+            "size": 3460,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/b-mobile.jpg",
+            "size": 5868,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/b-tablet.webp",
+            "size": 9440,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/b-tablet.jpg",
+            "size": 18337,
+            "width": 768
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/b-large.webp",
+            "size": 13990,
+            "width": 1024
+          },
+          "large_jpg": {
+            "path": "/optimized/img/b-large.jpg",
+            "size": 32075,
+            "width": 1024
+          }
+        }
+      }
+    },
+    "img/120579fa-e3ee-45ed-9126-dc917760fd39.JPG": {
+      "original": {
+        "width": 2296,
+        "height": 4080,
+        "format": "jpeg",
+        "size": 744607
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/120579fa-e3ee-45ed-9126-dc917760fd39-mobile.webp",
+            "size": 33938,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/120579fa-e3ee-45ed-9126-dc917760fd39-mobile.jpg",
+            "size": 39324,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/120579fa-e3ee-45ed-9126-dc917760fd39-tablet.webp",
+            "size": 148064,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/120579fa-e3ee-45ed-9126-dc917760fd39-tablet.jpg",
+            "size": 187462,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/120579fa-e3ee-45ed-9126-dc917760fd39-desktop.webp",
+            "size": 264092,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/120579fa-e3ee-45ed-9126-dc917760fd39-desktop.jpg",
+            "size": 383852,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/120579fa-e3ee-45ed-9126-dc917760fd39-large.webp",
+            "size": 460530,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/120579fa-e3ee-45ed-9126-dc917760fd39-large.jpg",
+            "size": 761035,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/blr.JPG": {
+      "original": {
+        "width": 4096,
+        "height": 3072,
+        "format": "jpeg",
+        "size": 1755301
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/blr-mobile.webp",
+            "size": 11574,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/blr-mobile.jpg",
+            "size": 14694,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/blr-tablet.webp",
+            "size": 50058,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/blr-tablet.jpg",
+            "size": 67746,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/blr-desktop.webp",
+            "size": 104658,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/blr-desktop.jpg",
+            "size": 147591,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/blr-large.webp",
+            "size": 214148,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/blr-large.jpg",
+            "size": 318328,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/00562eb5-e56e-4884-880a-dcc474e3c445.JPG": {
+      "original": {
+        "width": 2268,
+        "height": 4032,
+        "format": "jpeg",
+        "size": 502637
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/00562eb5-e56e-4884-880a-dcc474e3c445-mobile.webp",
+            "size": 28318,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/00562eb5-e56e-4884-880a-dcc474e3c445-mobile.jpg",
+            "size": 37869,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/00562eb5-e56e-4884-880a-dcc474e3c445-tablet.webp",
+            "size": 92656,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/00562eb5-e56e-4884-880a-dcc474e3c445-tablet.jpg",
+            "size": 141853,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/00562eb5-e56e-4884-880a-dcc474e3c445-desktop.webp",
+            "size": 164396,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/00562eb5-e56e-4884-880a-dcc474e3c445-desktop.jpg",
+            "size": 269388,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/00562eb5-e56e-4884-880a-dcc474e3c445-large.webp",
+            "size": 286040,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/00562eb5-e56e-4884-880a-dcc474e3c445-large.jpg",
+            "size": 519563,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/commercial.png": {
+      "original": {
+        "width": 1536,
+        "height": 1024,
+        "format": "png",
+        "size": 3234103
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/commercial-mobile.webp",
+            "size": 7294,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/commercial-mobile.jpg",
+            "size": 11140,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/commercial-tablet.webp",
+            "size": 31134,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/commercial-tablet.jpg",
+            "size": 50076,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/commercial-desktop.webp",
+            "size": 116486,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/commercial-desktop.jpg",
+            "size": 131899,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/commercial-large.webp",
+            "size": 263912,
+            "width": 1536
+          },
+          "large_jpg": {
+            "path": "/optimized/img/commercial-large.jpg",
+            "size": 246575,
+            "width": 1536
+          }
+        }
+      }
+    },
+    "img/IMG_007.jpeg": {
+      "original": {
+        "width": 1280,
+        "height": 960,
+        "format": "jpeg",
+        "size": 77728
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_007-mobile.webp",
+            "size": 7830,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_007-mobile.jpg",
+            "size": 11780,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_007-tablet.webp",
+            "size": 25672,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_007-tablet.jpg",
+            "size": 42526,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_007-desktop.webp",
+            "size": 44672,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_007-desktop.jpg",
+            "size": 79933,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_007-large.webp",
+            "size": 49728,
+            "width": 1280
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_007-large.jpg",
+            "size": 81937,
+            "width": 1280
+          }
+        }
+      }
+    },
+    "img/IMG_009.jpeg": {
+      "original": {
+        "width": 1280,
+        "height": 960,
+        "format": "jpeg",
+        "size": 39317
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_009-mobile.webp",
+            "size": 3056,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_009-mobile.jpg",
+            "size": 5630,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_009-tablet.webp",
+            "size": 9698,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_009-tablet.jpg",
+            "size": 19919,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_009-desktop.webp",
+            "size": 16752,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_009-desktop.jpg",
+            "size": 37069,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_009-large.webp",
+            "size": 18914,
+            "width": 1280
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_009-large.jpg",
+            "size": 38137,
+            "width": 1280
+          }
+        }
+      }
+    },
+    "img/IMG_008.jpeg": {
+      "original": {
+        "width": 1280,
+        "height": 960,
+        "format": "jpeg",
+        "size": 61465
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_008-mobile.webp",
+            "size": 5356,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_008-mobile.jpg",
+            "size": 8834,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_008-tablet.webp",
+            "size": 16642,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_008-tablet.jpg",
+            "size": 32643,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_008-desktop.webp",
+            "size": 28644,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_008-desktop.jpg",
+            "size": 61011,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_008-large.webp",
+            "size": 31718,
+            "width": 1280
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_008-large.jpg",
+            "size": 63086,
+            "width": 1280
+          }
+        }
+      }
+    },
+    "img/IMG_0160.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1784238
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0160-mobile.webp",
+            "size": 13664,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0160-mobile.jpg",
+            "size": 16473,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0160-tablet.webp",
+            "size": 50072,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0160-tablet.jpg",
+            "size": 67471,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0160-desktop.webp",
+            "size": 94906,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0160-desktop.jpg",
+            "size": 136625,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0160-large.webp",
+            "size": 183010,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0160-large.jpg",
+            "size": 277873,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0163.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1888764
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0163-mobile.webp",
+            "size": 14632,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0163-mobile.jpg",
+            "size": 18676,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0163-tablet.webp",
+            "size": 48902,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0163-tablet.jpg",
+            "size": 71158,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0163-desktop.webp",
+            "size": 90974,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0163-desktop.jpg",
+            "size": 141226,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0163-large.webp",
+            "size": 173816,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0163-large.jpg",
+            "size": 286839,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0162.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1971736
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0162-mobile.webp",
+            "size": 12302,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0162-mobile.jpg",
+            "size": 15912,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0162-tablet.webp",
+            "size": 45886,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0162-tablet.jpg",
+            "size": 64013,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0162-desktop.webp",
+            "size": 94410,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0162-desktop.jpg",
+            "size": 133258,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0162-large.webp",
+            "size": 196024,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0162-large.jpg",
+            "size": 285707,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0184.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 3832619
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0184-mobile.webp",
+            "size": 30662,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0184-mobile.jpg",
+            "size": 30212,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0184-tablet.webp",
+            "size": 146066,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0184-tablet.jpg",
+            "size": 154388,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0184-desktop.webp",
+            "size": 305288,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0184-desktop.jpg",
+            "size": 338705,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0184-large.webp",
+            "size": 603570,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0184-large.jpg",
+            "size": 719309,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0197.jpg": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 714222
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0197-mobile.webp",
+            "size": 7810,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0197-mobile.jpg",
+            "size": 11912,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0197-tablet.webp",
+            "size": 21506,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0197-tablet.jpg",
+            "size": 40931,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0197-desktop.webp",
+            "size": 40428,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0197-desktop.jpg",
+            "size": 80767,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0197-large.webp",
+            "size": 74886,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0197-large.jpg",
+            "size": 172050,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0277.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 2426808
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0277-mobile.webp",
+            "size": 12786,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0277-mobile.jpg",
+            "size": 16320,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0277-tablet.webp",
+            "size": 47632,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0277-tablet.jpg",
+            "size": 66684,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0277-desktop.webp",
+            "size": 100554,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0277-desktop.jpg",
+            "size": 145144,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0277-large.webp",
+            "size": 217998,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0277-large.jpg",
+            "size": 329236,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0187.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 2059328
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0187-mobile.webp",
+            "size": 6016,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0187-mobile.jpg",
+            "size": 8975,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0187-tablet.webp",
+            "size": 20992,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0187-tablet.jpg",
+            "size": 34415,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0187-desktop.webp",
+            "size": 45738,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0187-desktop.jpg",
+            "size": 77568,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0187-large.webp",
+            "size": 101528,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0187-large.jpg",
+            "size": 187001,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0290.jpg": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 914989
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0290-mobile.webp",
+            "size": 8944,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0290-mobile.jpg",
+            "size": 13093,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0290-tablet.webp",
+            "size": 30476,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0290-tablet.jpg",
+            "size": 49893,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0290-desktop.webp",
+            "size": 59814,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0290-desktop.jpg",
+            "size": 105535,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0290-large.webp",
+            "size": 137562,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0290-large.jpg",
+            "size": 252553,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0310.jpg": {
+      "original": {
+        "width": 3024,
+        "height": 4032,
+        "format": "jpeg",
+        "size": 1257205
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0310-mobile.webp",
+            "size": 24882,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0310-mobile.jpg",
+            "size": 30664,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0310-tablet.webp",
+            "size": 108628,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0310-tablet.jpg",
+            "size": 139213,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0310-desktop.webp",
+            "size": 215238,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0310-desktop.jpg",
+            "size": 290063,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0310-large.webp",
+            "size": 397744,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0310-large.jpg",
+            "size": 594419,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0343.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1746348
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0343-mobile.webp",
+            "size": 6184,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0343-mobile.jpg",
+            "size": 9721,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0343-tablet.webp",
+            "size": 22348,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0343-tablet.jpg",
+            "size": 37442,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0343-desktop.webp",
+            "size": 43886,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0343-desktop.jpg",
+            "size": 76383,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0343-large.webp",
+            "size": 89320,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0343-large.jpg",
+            "size": 163945,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0318.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 2457507
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0318-mobile.webp",
+            "size": 6428,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0318-mobile.jpg",
+            "size": 9816,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0318-tablet.webp",
+            "size": 28316,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0318-tablet.jpg",
+            "size": 42820,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0318-desktop.webp",
+            "size": 66938,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0318-desktop.jpg",
+            "size": 102189,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0318-large.webp",
+            "size": 157480,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0318-large.jpg",
+            "size": 248715,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0313.jpg": {
+      "original": {
+        "width": 3024,
+        "height": 4032,
+        "format": "jpeg",
+        "size": 800783
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0313-mobile.webp",
+            "size": 15892,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0313-mobile.jpg",
+            "size": 22435,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0313-tablet.webp",
+            "size": 56298,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0313-tablet.jpg",
+            "size": 83737,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0313-desktop.webp",
+            "size": 101446,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0313-desktop.jpg",
+            "size": 164846,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0313-large.webp",
+            "size": 185262,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0313-large.jpg",
+            "size": 334853,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0385.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1230240
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0385-mobile.webp",
+            "size": 3680,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0385-mobile.jpg",
+            "size": 5979,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0385-tablet.webp",
+            "size": 16034,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0385-tablet.jpg",
+            "size": 25635,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0385-desktop.webp",
+            "size": 32682,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0385-desktop.jpg",
+            "size": 54155,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0385-large.webp",
+            "size": 65694,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0385-large.jpg",
+            "size": 114330,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0375.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1359238
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0375-mobile.webp",
+            "size": 12482,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0375-mobile.jpg",
+            "size": 16523,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0375-tablet.webp",
+            "size": 36536,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0375-tablet.jpg",
+            "size": 58432,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0375-desktop.webp",
+            "size": 65842,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0375-desktop.jpg",
+            "size": 112605,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0375-large.webp",
+            "size": 118246,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0375-large.jpg",
+            "size": 221826,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0408.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1782076
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0408-mobile.webp",
+            "size": 5676,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0408-mobile.jpg",
+            "size": 9166,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0408-tablet.webp",
+            "size": 20288,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0408-tablet.jpg",
+            "size": 34808,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0408-desktop.webp",
+            "size": 39506,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0408-desktop.jpg",
+            "size": 71805,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0408-large.webp",
+            "size": 78748,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0408-large.jpg",
+            "size": 162254,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0427.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 5956673
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0427-mobile.webp",
+            "size": 23126,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0427-mobile.jpg",
+            "size": 22992,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0427-tablet.webp",
+            "size": 133490,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0427-tablet.jpg",
+            "size": 132457,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0427-desktop.webp",
+            "size": 327754,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0427-desktop.jpg",
+            "size": 333436,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0427-large.webp",
+            "size": 833468,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0427-large.jpg",
+            "size": 851912,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0539.jpg": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 1388215
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0539-mobile.webp",
+            "size": 10684,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0539-mobile.jpg",
+            "size": 12260,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0539-tablet.webp",
+            "size": 61034,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0539-tablet.jpg",
+            "size": 68588,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0539-desktop.webp",
+            "size": 141022,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0539-desktop.jpg",
+            "size": 162383,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0539-large.webp",
+            "size": 284416,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0539-large.jpg",
+            "size": 356555,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0435.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1466080
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0435-mobile.webp",
+            "size": 2512,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0435-mobile.jpg",
+            "size": 5133,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0435-tablet.webp",
+            "size": 10216,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0435-tablet.jpg",
+            "size": 20367,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0435-desktop.webp",
+            "size": 21852,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0435-desktop.jpg",
+            "size": 44090,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0435-large.webp",
+            "size": 46544,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0435-large.jpg",
+            "size": 109577,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0553.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1253569
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0553-mobile.webp",
+            "size": 4258,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0553-mobile.jpg",
+            "size": 7151,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0553-tablet.webp",
+            "size": 13802,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0553-tablet.jpg",
+            "size": 25054,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0553-desktop.webp",
+            "size": 28234,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0553-desktop.jpg",
+            "size": 49337,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0553-large.webp",
+            "size": 63872,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0553-large.jpg",
+            "size": 105368,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0554.jpg": {
+      "original": {
+        "width": 4284,
+        "height": 5712,
+        "format": "jpeg",
+        "size": 1532201
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0554-mobile.webp",
+            "size": 14170,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0554-mobile.jpg",
+            "size": 20807,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0554-tablet.webp",
+            "size": 44202,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0554-tablet.jpg",
+            "size": 73243,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0554-desktop.webp",
+            "size": 80500,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0554-desktop.jpg",
+            "size": 141377,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0554-large.webp",
+            "size": 156054,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0554-large.jpg",
+            "size": 286997,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0559.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 2314893
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0559-mobile.webp",
+            "size": 19202,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0559-mobile.jpg",
+            "size": 22845,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0559-tablet.webp",
+            "size": 68260,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0559-tablet.jpg",
+            "size": 91140,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0559-desktop.webp",
+            "size": 130154,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0559-desktop.jpg",
+            "size": 182525,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0559-large.webp",
+            "size": 245862,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0559-large.jpg",
+            "size": 375472,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0797.jpg": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 472498
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0797-mobile.webp",
+            "size": 3064,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0797-mobile.jpg",
+            "size": 4832,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0797-tablet.webp",
+            "size": 9606,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0797-tablet.jpg",
+            "size": 16669,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0797-desktop.webp",
+            "size": 16912,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0797-desktop.jpg",
+            "size": 30802,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0797-large.webp",
+            "size": 30040,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0797-large.jpg",
+            "size": 59723,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0758.jpg": {
+      "original": {
+        "width": 4284,
+        "height": 5712,
+        "format": "jpeg",
+        "size": 2877018
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0758-mobile.webp",
+            "size": 14454,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0758-mobile.jpg",
+            "size": 19376,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0758-tablet.webp",
+            "size": 56036,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0758-tablet.jpg",
+            "size": 79926,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0758-desktop.webp",
+            "size": 120544,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0758-desktop.jpg",
+            "size": 171896,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0758-large.webp",
+            "size": 259292,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0758-large.jpg",
+            "size": 377951,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0802.jpg": {
+      "original": {
+        "width": 3024,
+        "height": 4032,
+        "format": "jpeg",
+        "size": 1554110
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0802-mobile.webp",
+            "size": 21186,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0802-mobile.jpg",
+            "size": 26140,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0802-tablet.webp",
+            "size": 72192,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0802-tablet.jpg",
+            "size": 95232,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0802-desktop.webp",
+            "size": 131370,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0802-desktop.jpg",
+            "size": 181779,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0802-large.webp",
+            "size": 234822,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0802-large.jpg",
+            "size": 365056,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0819.jpg": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 1318112
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0819-mobile.webp",
+            "size": 6262,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0819-mobile.jpg",
+            "size": 9156,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0819-tablet.webp",
+            "size": 27148,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0819-tablet.jpg",
+            "size": 39439,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0819-desktop.webp",
+            "size": 59734,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0819-desktop.jpg",
+            "size": 86086,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0819-large.webp",
+            "size": 119962,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0819-large.jpg",
+            "size": 187645,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0821.jpg": {
+      "original": {
+        "width": 3024,
+        "height": 4032,
+        "format": "jpeg",
+        "size": 702916
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0821-mobile.webp",
+            "size": 4976,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0821-mobile.jpg",
+            "size": 8390,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0821-tablet.webp",
+            "size": 16666,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0821-tablet.jpg",
+            "size": 29207,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0821-desktop.webp",
+            "size": 29994,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0821-desktop.jpg",
+            "size": 58035,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0821-large.webp",
+            "size": 55598,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0821-large.jpg",
+            "size": 123832,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0844.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 3089156
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0844-mobile.webp",
+            "size": 15828,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0844-mobile.jpg",
+            "size": 17915,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0844-tablet.webp",
+            "size": 74352,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0844-tablet.jpg",
+            "size": 85652,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0844-desktop.webp",
+            "size": 166152,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0844-desktop.jpg",
+            "size": 195987,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0844-large.webp",
+            "size": 369462,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0844-large.jpg",
+            "size": 457154,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0866.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 5560456
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0866-mobile.webp",
+            "size": 28672,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0866-mobile.jpg",
+            "size": 27999,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0866-tablet.webp",
+            "size": 155636,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0866-tablet.jpg",
+            "size": 152616,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0866-desktop.webp",
+            "size": 378390,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0866-desktop.jpg",
+            "size": 372587,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0866-large.webp",
+            "size": 934022,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0866-large.jpg",
+            "size": 922434,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_0875.jpg": {
+      "original": {
+        "width": 4284,
+        "height": 5712,
+        "format": "jpeg",
+        "size": 3483049
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_0875-mobile.webp",
+            "size": 44966,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_0875-mobile.jpg",
+            "size": 45331,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_0875-tablet.webp",
+            "size": 229050,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_0875-tablet.jpg",
+            "size": 236003,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_0875-desktop.webp",
+            "size": 538724,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_0875-desktop.jpg",
+            "size": 557752,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_0875-large.webp",
+            "size": 1183402,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_0875-large.jpg",
+            "size": 1281600,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1085.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1662091
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1085-mobile.webp",
+            "size": 13592,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1085-mobile.jpg",
+            "size": 17740,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1085-tablet.webp",
+            "size": 44012,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1085-tablet.jpg",
+            "size": 66932,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1085-desktop.webp",
+            "size": 82526,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1085-desktop.jpg",
+            "size": 132996,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1085-large.webp",
+            "size": 154666,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1085-large.jpg",
+            "size": 270551,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1059.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1711999
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1059-mobile.webp",
+            "size": 9380,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1059-mobile.jpg",
+            "size": 13473,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1059-tablet.webp",
+            "size": 27888,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1059-tablet.jpg",
+            "size": 47972,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1059-desktop.webp",
+            "size": 50654,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1059-desktop.jpg",
+            "size": 92450,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1059-large.webp",
+            "size": 96256,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1059-large.jpg",
+            "size": 194111,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1112.jpg": {
+      "original": {
+        "width": 4284,
+        "height": 5712,
+        "format": "jpeg",
+        "size": 2800153
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1112-mobile.webp",
+            "size": 19024,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1112-mobile.jpg",
+            "size": 25283,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1112-tablet.webp",
+            "size": 101858,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1112-tablet.jpg",
+            "size": 123375,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1112-desktop.webp",
+            "size": 233798,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1112-desktop.jpg",
+            "size": 281625,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1112-large.webp",
+            "size": 473040,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1112-large.jpg",
+            "size": 640706,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1191.jpg": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 755094
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1191-mobile.webp",
+            "size": 6182,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1191-mobile.jpg",
+            "size": 9730,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1191-tablet.webp",
+            "size": 23556,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1191-tablet.jpg",
+            "size": 38398,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1191-desktop.webp",
+            "size": 48774,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1191-desktop.jpg",
+            "size": 81830,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1191-large.webp",
+            "size": 98936,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1191-large.jpg",
+            "size": 180216,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1139.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1944678
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1139-mobile.webp",
+            "size": 16766,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1139-mobile.jpg",
+            "size": 19891,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1139-tablet.webp",
+            "size": 57424,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1139-tablet.jpg",
+            "size": 76850,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1139-desktop.webp",
+            "size": 106882,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1139-desktop.jpg",
+            "size": 153252,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1139-large.webp",
+            "size": 203686,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1139-large.jpg",
+            "size": 313638,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1203.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 3457273
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1203-mobile.webp",
+            "size": 18324,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1203-mobile.jpg",
+            "size": 20612,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1203-tablet.webp",
+            "size": 85584,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1203-tablet.jpg",
+            "size": 99095,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1203-desktop.webp",
+            "size": 189816,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1203-desktop.jpg",
+            "size": 224357,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1203-large.webp",
+            "size": 431068,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1203-large.jpg",
+            "size": 522807,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1181.JPG": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 5581511
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1181-mobile.webp",
+            "size": 18206,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1181-mobile.jpg",
+            "size": 20853,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1181-tablet.webp",
+            "size": 81324,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1181-tablet.jpg",
+            "size": 97754,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1181-desktop.webp",
+            "size": 179656,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1181-desktop.jpg",
+            "size": 219940,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1181-large.webp",
+            "size": 419092,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1181-large.jpg",
+            "size": 513832,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1217.JPG": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 2616529
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1217-mobile.webp",
+            "size": 7698,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1217-mobile.jpg",
+            "size": 11691,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1217-tablet.webp",
+            "size": 25852,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1217-tablet.jpg",
+            "size": 42833,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1217-desktop.webp",
+            "size": 47252,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1217-desktop.jpg",
+            "size": 83937,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1217-large.webp",
+            "size": 85974,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1217-large.jpg",
+            "size": 164723,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1247.JPG": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 2963592
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1247-mobile.webp",
+            "size": 6934,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1247-mobile.jpg",
+            "size": 10477,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1247-tablet.webp",
+            "size": 23458,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1247-tablet.jpg",
+            "size": 38210,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1247-desktop.webp",
+            "size": 45792,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1247-desktop.jpg",
+            "size": 76161,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1247-large.webp",
+            "size": 90460,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1247-large.jpg",
+            "size": 156816,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1364.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 2603376
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1364-mobile.webp",
+            "size": 6368,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1364-mobile.jpg",
+            "size": 8355,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1364-tablet.webp",
+            "size": 39000,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1364-tablet.jpg",
+            "size": 46771,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1364-desktop.webp",
+            "size": 101326,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1364-desktop.jpg",
+            "size": 118628,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1364-large.webp",
+            "size": 259474,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1364-large.jpg",
+            "size": 307686,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1364 copy.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 2603376
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1364 copy-mobile.webp",
+            "size": 6368,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1364 copy-mobile.jpg",
+            "size": 8355,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1364 copy-tablet.webp",
+            "size": 39000,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1364 copy-tablet.jpg",
+            "size": 46771,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1364 copy-desktop.webp",
+            "size": 101326,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1364 copy-desktop.jpg",
+            "size": 118628,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1364 copy-large.webp",
+            "size": 259474,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1364 copy-large.jpg",
+            "size": 307686,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1392.JPG": {
+      "original": {
+        "width": 4284,
+        "height": 5712,
+        "format": "jpeg",
+        "size": 7933163
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1392-mobile.webp",
+            "size": 24716,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1392-mobile.jpg",
+            "size": 31600,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1392-tablet.webp",
+            "size": 110506,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1392-tablet.jpg",
+            "size": 144135,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1392-desktop.webp",
+            "size": 246750,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1392-desktop.jpg",
+            "size": 322360,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1392-large.webp",
+            "size": 564682,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1392-large.jpg",
+            "size": 760878,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1454.JPG": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 2629270
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1454-mobile.webp",
+            "size": 12166,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1454-mobile.jpg",
+            "size": 15606,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1454-tablet.webp",
+            "size": 45408,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1454-tablet.jpg",
+            "size": 65621,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1454-desktop.webp",
+            "size": 94344,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1454-desktop.jpg",
+            "size": 139120,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1454-large.webp",
+            "size": 246370,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1454-large.jpg",
+            "size": 332878,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1407.JPG": {
+      "original": {
+        "width": 4284,
+        "height": 5712,
+        "format": "jpeg",
+        "size": 3872424
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1407-mobile.webp",
+            "size": 11048,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1407-mobile.jpg",
+            "size": 18344,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1407-tablet.webp",
+            "size": 29170,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1407-tablet.jpg",
+            "size": 57014,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1407-desktop.webp",
+            "size": 51596,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1407-desktop.jpg",
+            "size": 106021,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1407-large.webp",
+            "size": 101764,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1407-large.jpg",
+            "size": 222622,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1408.JPG": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 4424277
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1408-mobile.webp",
+            "size": 13774,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1408-mobile.jpg",
+            "size": 18581,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1408-tablet.webp",
+            "size": 40190,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1408-tablet.jpg",
+            "size": 63725,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1408-desktop.webp",
+            "size": 68872,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1408-desktop.jpg",
+            "size": 118250,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1408-large.webp",
+            "size": 120026,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1408-large.jpg",
+            "size": 227719,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1490.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1636331
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1490-mobile.webp",
+            "size": 8886,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1490-mobile.jpg",
+            "size": 12660,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1490-tablet.webp",
+            "size": 34368,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1490-tablet.jpg",
+            "size": 52866,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1490-desktop.webp",
+            "size": 66332,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1490-desktop.jpg",
+            "size": 108231,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1490-large.webp",
+            "size": 120362,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1490-large.jpg",
+            "size": 224656,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1521.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 831026
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1521-mobile.webp",
+            "size": 2266,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1521-mobile.jpg",
+            "size": 3743,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1521-tablet.webp",
+            "size": 12470,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1521-tablet.jpg",
+            "size": 18401,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1521-desktop.webp",
+            "size": 30384,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1521-desktop.jpg",
+            "size": 43320,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1521-large.webp",
+            "size": 73836,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1521-large.jpg",
+            "size": 104444,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1591.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1881873
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1591-mobile.webp",
+            "size": 12532,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1591-mobile.jpg",
+            "size": 16595,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1591-tablet.webp",
+            "size": 41498,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1591-tablet.jpg",
+            "size": 62226,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1591-desktop.webp",
+            "size": 81348,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1591-desktop.jpg",
+            "size": 124510,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1591-large.webp",
+            "size": 161500,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1591-large.jpg",
+            "size": 260209,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1546.JPG": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 2615403
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1546-mobile.webp",
+            "size": 21516,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1546-mobile.jpg",
+            "size": 22140,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1546-tablet.webp",
+            "size": 98804,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1546-tablet.jpg",
+            "size": 111246,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1546-desktop.webp",
+            "size": 201956,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1546-desktop.jpg",
+            "size": 238017,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1546-large.webp",
+            "size": 372220,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1546-large.jpg",
+            "size": 482198,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1721.JPG": {
+      "original": {
+        "width": 4284,
+        "height": 5712,
+        "format": "jpeg",
+        "size": 11109965
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1721-mobile.webp",
+            "size": 59564,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1721-mobile.jpg",
+            "size": 58388,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1721-tablet.webp",
+            "size": 272188,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1721-tablet.jpg",
+            "size": 280146,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1721-desktop.webp",
+            "size": 574678,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1721-desktop.jpg",
+            "size": 619851,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1721-large.webp",
+            "size": 1188700,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1721-large.jpg",
+            "size": 1354576,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1719.JPG": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 6126849
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1719-mobile.webp",
+            "size": 31236,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1719-mobile.jpg",
+            "size": 30636,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1719-tablet.webp",
+            "size": 147612,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1719-tablet.jpg",
+            "size": 152142,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1719-desktop.webp",
+            "size": 316596,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1719-desktop.jpg",
+            "size": 339472,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1719-large.webp",
+            "size": 653748,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1719-large.jpg",
+            "size": 740071,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1733.JPG": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 479872
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1733-mobile.webp",
+            "size": 328,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1733-mobile.jpg",
+            "size": 843,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1733-tablet.webp",
+            "size": 1266,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1733-tablet.jpg",
+            "size": 2483,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1733-desktop.webp",
+            "size": 2720,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1733-desktop.jpg",
+            "size": 5026,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1733-large.webp",
+            "size": 6400,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1733-large.jpg",
+            "size": 11057,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1914.JPG": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 921513
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1914-mobile.webp",
+            "size": 3114,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1914-mobile.jpg",
+            "size": 5258,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1914-tablet.webp",
+            "size": 12370,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1914-tablet.jpg",
+            "size": 21080,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1914-desktop.webp",
+            "size": 24956,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1914-desktop.jpg",
+            "size": 44009,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1914-large.webp",
+            "size": 49362,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1914-large.jpg",
+            "size": 97369,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_2163.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1169403
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_2163-mobile.webp",
+            "size": 2496,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_2163-mobile.jpg",
+            "size": 5272,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_2163-tablet.webp",
+            "size": 9222,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_2163-tablet.jpg",
+            "size": 18960,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_2163-desktop.webp",
+            "size": 22944,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_2163-desktop.jpg",
+            "size": 43224,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_2163-large.webp",
+            "size": 60570,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_2163-large.jpg",
+            "size": 110686,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_1915.JPG": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 2301547
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_1915-mobile.webp",
+            "size": 2718,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_1915-mobile.jpg",
+            "size": 4914,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_1915-tablet.webp",
+            "size": 9838,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_1915-tablet.jpg",
+            "size": 20986,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_1915-desktop.webp",
+            "size": 32772,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_1915-desktop.jpg",
+            "size": 64936,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_1915-large.webp",
+            "size": 130950,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_1915-large.jpg",
+            "size": 224533,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_2187.JPG": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 4801923
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_2187-mobile.webp",
+            "size": 16056,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_2187-mobile.jpg",
+            "size": 19657,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_2187-tablet.webp",
+            "size": 69470,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_2187-tablet.jpg",
+            "size": 88821,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_2187-desktop.webp",
+            "size": 154562,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_2187-desktop.jpg",
+            "size": 197210,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_2187-large.webp",
+            "size": 344544,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_2187-large.jpg",
+            "size": 450792,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_2184.JPG": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 5591102
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_2184-mobile.webp",
+            "size": 15918,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_2184-mobile.jpg",
+            "size": 18779,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_2184-tablet.webp",
+            "size": 72914,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_2184-tablet.jpg",
+            "size": 86744,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_2184-desktop.webp",
+            "size": 171888,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_2184-desktop.jpg",
+            "size": 201563,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_2184-large.webp",
+            "size": 428306,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_2184-large.jpg",
+            "size": 492606,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_2349.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1144812
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_2349-mobile.webp",
+            "size": 10428,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_2349-mobile.jpg",
+            "size": 13537,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_2349-tablet.webp",
+            "size": 36540,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_2349-tablet.jpg",
+            "size": 56496,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_2349-desktop.webp",
+            "size": 66468,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_2349-desktop.jpg",
+            "size": 112596,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_2349-large.webp",
+            "size": 119666,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_2349-large.jpg",
+            "size": 222713,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_2310.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 3549289
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_2310-mobile.webp",
+            "size": 27798,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_2310-mobile.jpg",
+            "size": 27478,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_2310-tablet.webp",
+            "size": 129194,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_2310-tablet.jpg",
+            "size": 132718,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_2310-desktop.webp",
+            "size": 268176,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_2310-desktop.jpg",
+            "size": 290203,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_2310-large.webp",
+            "size": 567466,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_2310-large.jpg",
+            "size": 648873,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_2344.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1594900
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_2344-mobile.webp",
+            "size": 16754,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_2344-mobile.jpg",
+            "size": 19345,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_2344-tablet.webp",
+            "size": 60790,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_2344-tablet.jpg",
+            "size": 81212,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_2344-desktop.webp",
+            "size": 107624,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_2344-desktop.jpg",
+            "size": 161237,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_2344-large.webp",
+            "size": 195588,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_2344-large.jpg",
+            "size": 320810,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_2249.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1430535
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_2249-mobile.webp",
+            "size": 4202,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_2249-mobile.jpg",
+            "size": 7324,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_2249-tablet.webp",
+            "size": 14202,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_2249-tablet.jpg",
+            "size": 25656,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_2249-desktop.webp",
+            "size": 28082,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_2249-desktop.jpg",
+            "size": 50515,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_2249-large.webp",
+            "size": 61918,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_2249-large.jpg",
+            "size": 107515,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_2352.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1458359
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_2352-mobile.webp",
+            "size": 8796,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_2352-mobile.jpg",
+            "size": 12618,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_2352-tablet.webp",
+            "size": 26750,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_2352-tablet.jpg",
+            "size": 45124,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_2352-desktop.webp",
+            "size": 47370,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_2352-desktop.jpg",
+            "size": 86763,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_2352-large.webp",
+            "size": 85124,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_2352-large.jpg",
+            "size": 170323,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_5288.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 13948124
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_5288-mobile.webp",
+            "size": 24200,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_5288-mobile.jpg",
+            "size": 24530,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_5288-tablet.webp",
+            "size": 117962,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_5288-tablet.jpg",
+            "size": 123715,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_5288-desktop.webp",
+            "size": 271582,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_5288-desktop.jpg",
+            "size": 289218,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_5288-large.webp",
+            "size": 588184,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_5288-large.jpg",
+            "size": 651851,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_2359.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 2140490
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_2359-mobile.webp",
+            "size": 15166,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_2359-mobile.jpg",
+            "size": 18350,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_2359-tablet.webp",
+            "size": 57146,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_2359-tablet.jpg",
+            "size": 75577,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_2359-desktop.webp",
+            "size": 114010,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_2359-desktop.jpg",
+            "size": 158112,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_2359-large.webp",
+            "size": 225282,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_2359-large.jpg",
+            "size": 333529,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_5348.JPG": {
+      "original": {
+        "width": 6048,
+        "height": 7140,
+        "format": "jpeg",
+        "size": 6679736
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_5348-mobile.webp",
+            "size": 10608,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_5348-mobile.jpg",
+            "size": 16962,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_5348-tablet.webp",
+            "size": 35144,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_5348-tablet.jpg",
+            "size": 60407,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_5348-desktop.webp",
+            "size": 65370,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_5348-desktop.jpg",
+            "size": 116007,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_5348-large.webp",
+            "size": 134658,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_5348-large.jpg",
+            "size": 240035,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_6164.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 8262270
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_6164-mobile.webp",
+            "size": 10490,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_6164-mobile.jpg",
+            "size": 14673,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_6164-tablet.webp",
+            "size": 30870,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_6164-tablet.jpg",
+            "size": 51861,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_6164-desktop.webp",
+            "size": 55164,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_6164-desktop.jpg",
+            "size": 99187,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_6164-large.webp",
+            "size": 97918,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_6164-large.jpg",
+            "size": 197720,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_5365.JPG": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 2934584
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_5365-mobile.webp",
+            "size": 21290,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_5365-mobile.jpg",
+            "size": 22010,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_5365-tablet.webp",
+            "size": 99482,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_5365-tablet.jpg",
+            "size": 108177,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_5365-desktop.webp",
+            "size": 205194,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_5365-desktop.jpg",
+            "size": 233346,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_5365-large.webp",
+            "size": 391422,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_5365-large.jpg",
+            "size": 490681,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_6163.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 8107708
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_6163-mobile.webp",
+            "size": 9636,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_6163-mobile.jpg",
+            "size": 13858,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_6163-tablet.webp",
+            "size": 28394,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_6163-tablet.jpg",
+            "size": 48455,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_6163-desktop.webp",
+            "size": 50502,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_6163-desktop.jpg",
+            "size": 92391,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_6163-large.webp",
+            "size": 90582,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_6163-large.jpg",
+            "size": 182174,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_6215.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 8021574
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_6215-mobile.webp",
+            "size": 20010,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_6215-mobile.jpg",
+            "size": 22567,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_6215-tablet.webp",
+            "size": 79134,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_6215-tablet.jpg",
+            "size": 97487,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_6215-desktop.webp",
+            "size": 150534,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_6215-desktop.jpg",
+            "size": 202040,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_6215-large.webp",
+            "size": 295276,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_6215-large.jpg",
+            "size": 422224,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_6505.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 4388896
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_6505-mobile.webp",
+            "size": 5260,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_6505-mobile.jpg",
+            "size": 8852,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_6505-tablet.webp",
+            "size": 14620,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_6505-tablet.jpg",
+            "size": 28669,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_6505-desktop.webp",
+            "size": 24864,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_6505-desktop.jpg",
+            "size": 51988,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_6505-large.webp",
+            "size": 43832,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_6505-large.jpg",
+            "size": 101336,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_6510.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 4684754
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_6510-mobile.webp",
+            "size": 6478,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_6510-mobile.jpg",
+            "size": 10096,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_6510-tablet.webp",
+            "size": 22916,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_6510-tablet.jpg",
+            "size": 37721,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_6510-desktop.webp",
+            "size": 45462,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_6510-desktop.jpg",
+            "size": 75490,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_6510-large.webp",
+            "size": 90982,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_6510-large.jpg",
+            "size": 154197,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_6511.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 4489612
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_6511-mobile.webp",
+            "size": 6172,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_6511-mobile.jpg",
+            "size": 9826,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_6511-tablet.webp",
+            "size": 20248,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_6511-tablet.jpg",
+            "size": 34669,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_6511-desktop.webp",
+            "size": 39160,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_6511-desktop.jpg",
+            "size": 67466,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_6511-large.webp",
+            "size": 73996,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_6511-large.jpg",
+            "size": 133828,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_6504.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 6271998
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_6504-mobile.webp",
+            "size": 11216,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_6504-mobile.jpg",
+            "size": 13965,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_6504-tablet.webp",
+            "size": 46140,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_6504-tablet.jpg",
+            "size": 61202,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_6504-desktop.webp",
+            "size": 96744,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_6504-desktop.jpg",
+            "size": 132279,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_6504-large.webp",
+            "size": 199272,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_6504-large.jpg",
+            "size": 287148,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_6557.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 4982101
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_6557-mobile.webp",
+            "size": 6316,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_6557-mobile.jpg",
+            "size": 9996,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_6557-tablet.webp",
+            "size": 25942,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_6557-tablet.jpg",
+            "size": 41114,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_6557-desktop.webp",
+            "size": 58868,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_6557-desktop.jpg",
+            "size": 92759,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_6557-large.webp",
+            "size": 125986,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_6557-large.jpg",
+            "size": 204615,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_6557 2.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 4982101
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_6557 2-mobile.webp",
+            "size": 6316,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_6557 2-mobile.jpg",
+            "size": 9996,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_6557 2-tablet.webp",
+            "size": 25942,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_6557 2-tablet.jpg",
+            "size": 41114,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_6557 2-desktop.webp",
+            "size": 58868,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_6557 2-desktop.jpg",
+            "size": 92759,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_6557 2-large.webp",
+            "size": 125986,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_6557 2-large.jpg",
+            "size": 204615,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_6552.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 4673160
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_6552-mobile.webp",
+            "size": 4666,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_6552-mobile.jpg",
+            "size": 8503,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_6552-tablet.webp",
+            "size": 13166,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_6552-tablet.jpg",
+            "size": 27094,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_6552-desktop.webp",
+            "size": 22824,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_6552-desktop.jpg",
+            "size": 49944,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_6552-large.webp",
+            "size": 40990,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_6552-large.jpg",
+            "size": 98649,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_6560.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 5458049
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_6560-mobile.webp",
+            "size": 5570,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_6560-mobile.jpg",
+            "size": 9160,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_6560-tablet.webp",
+            "size": 25300,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_6560-tablet.jpg",
+            "size": 38846,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_6560-desktop.webp",
+            "size": 61772,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_6560-desktop.jpg",
+            "size": 91103,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_6560-large.webp",
+            "size": 141416,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_6560-large.jpg",
+            "size": 212993,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_6563.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 4783964
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_6563-mobile.webp",
+            "size": 5352,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_6563-mobile.jpg",
+            "size": 9150,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_6563-tablet.webp",
+            "size": 20920,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_6563-tablet.jpg",
+            "size": 35306,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_6563-desktop.webp",
+            "size": 47666,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_6563-desktop.jpg",
+            "size": 78042,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_6563-large.webp",
+            "size": 103970,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_6563-large.jpg",
+            "size": 173803,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_6910.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 3359292
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_6910-mobile.webp",
+            "size": 3010,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_6910-mobile.jpg",
+            "size": 5639,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_6910-tablet.webp",
+            "size": 9280,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_6910-tablet.jpg",
+            "size": 19647,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_6910-desktop.webp",
+            "size": 16754,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_6910-desktop.jpg",
+            "size": 36518,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_6910-large.webp",
+            "size": 29498,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_6910-large.jpg",
+            "size": 68999,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_7267.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 4522841
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_7267-mobile.webp",
+            "size": 5414,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_7267-mobile.jpg",
+            "size": 9332,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_7267-tablet.webp",
+            "size": 21502,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_7267-tablet.jpg",
+            "size": 38318,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_7267-desktop.webp",
+            "size": 45746,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_7267-desktop.jpg",
+            "size": 79486,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_7267-large.webp",
+            "size": 91374,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_7267-large.jpg",
+            "size": 164448,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_6886.JPG": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 2057934
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_6886-mobile.webp",
+            "size": 12236,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_6886-mobile.jpg",
+            "size": 15031,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_6886-tablet.webp",
+            "size": 50628,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_6886-tablet.jpg",
+            "size": 66328,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_6886-desktop.webp",
+            "size": 99398,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_6886-desktop.jpg",
+            "size": 141069,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_6886-large.webp",
+            "size": 202964,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_6886-large.jpg",
+            "size": 309473,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_8067.JPG": {
+      "original": {
+        "width": 5868,
+        "height": 4402,
+        "format": "jpeg",
+        "size": 5689900
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_8067-mobile.webp",
+            "size": 7664,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_8067-mobile.jpg",
+            "size": 10219,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_8067-tablet.webp",
+            "size": 35120,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_8067-tablet.jpg",
+            "size": 48853,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_8067-desktop.webp",
+            "size": 70760,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_8067-desktop.jpg",
+            "size": 106221,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_8067-large.webp",
+            "size": 143118,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_8067-large.jpg",
+            "size": 236851,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_8085.JPG": {
+      "original": {
+        "width": 3088,
+        "height": 2316,
+        "format": "jpeg",
+        "size": 2956680
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_8085-mobile.webp",
+            "size": 19770,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_8085-mobile.jpg",
+            "size": 21511,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_8085-tablet.webp",
+            "size": 111292,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_8085-tablet.jpg",
+            "size": 120192,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_8085-desktop.webp",
+            "size": 260408,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_8085-desktop.jpg",
+            "size": 282381,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_8085-large.webp",
+            "size": 584578,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_8085-large.jpg",
+            "size": 645215,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_7631.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 6441476
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_7631-mobile.webp",
+            "size": 8898,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_7631-mobile.jpg",
+            "size": 12266,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_7631-tablet.webp",
+            "size": 41966,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_7631-tablet.jpg",
+            "size": 55881,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_7631-desktop.webp",
+            "size": 98374,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_7631-desktop.jpg",
+            "size": 131759,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_7631-large.webp",
+            "size": 224818,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_7631-large.jpg",
+            "size": 311784,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_7494.JPG": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 2457560
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_7494-mobile.webp",
+            "size": 17278,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_7494-mobile.jpg",
+            "size": 18550,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_7494-tablet.webp",
+            "size": 82348,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_7494-tablet.jpg",
+            "size": 94608,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_7494-desktop.webp",
+            "size": 172832,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_7494-desktop.jpg",
+            "size": 209866,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_7494-large.webp",
+            "size": 327716,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_7494-large.jpg",
+            "size": 437097,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_8353.JPG": {
+      "original": {
+        "width": 6256,
+        "height": 4692,
+        "format": "jpeg",
+        "size": 4354986
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_8353-mobile.webp",
+            "size": 14538,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_8353-mobile.jpg",
+            "size": 17418,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_8353-tablet.webp",
+            "size": 66566,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_8353-tablet.jpg",
+            "size": 80778,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_8353-desktop.webp",
+            "size": 138752,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_8353-desktop.jpg",
+            "size": 173751,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_8353-large.webp",
+            "size": 295204,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_8353-large.jpg",
+            "size": 386886,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_8343.JPG": {
+      "original": {
+        "width": 8064,
+        "height": 6048,
+        "format": "jpeg",
+        "size": 2242524
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_8343-mobile.webp",
+            "size": 2662,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_8343-mobile.jpg",
+            "size": 4832,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_8343-tablet.webp",
+            "size": 10154,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_8343-tablet.jpg",
+            "size": 18729,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_8343-desktop.webp",
+            "size": 18830,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_8343-desktop.jpg",
+            "size": 35753,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_8343-large.webp",
+            "size": 35698,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_8343-large.jpg",
+            "size": 69214,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_8344.JPG": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 1019355
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_8344-mobile.webp",
+            "size": 2874,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_8344-mobile.jpg",
+            "size": 5211,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_8344-tablet.webp",
+            "size": 12940,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_8344-tablet.jpg",
+            "size": 24081,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_8344-desktop.webp",
+            "size": 26390,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_8344-desktop.jpg",
+            "size": 52483,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_8344-large.webp",
+            "size": 51436,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_8344-large.jpg",
+            "size": 113756,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/IMG_8345.JPG": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 836131
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/IMG_8345-mobile.webp",
+            "size": 2140,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/IMG_8345-mobile.jpg",
+            "size": 4173,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/IMG_8345-tablet.webp",
+            "size": 10222,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/IMG_8345-tablet.jpg",
+            "size": 19843,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/IMG_8345-desktop.webp",
+            "size": 22088,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/IMG_8345-desktop.jpg",
+            "size": 44101,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/IMG_8345-large.webp",
+            "size": 44460,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/IMG_8345-large.jpg",
+            "size": 94792,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/portrat_.png": {
+      "original": {
+        "width": 1536,
+        "height": 1024,
+        "format": "png",
+        "size": 3033279
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/portrat_-mobile.webp",
+            "size": 7182,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/portrat_-mobile.jpg",
+            "size": 11349,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/portrat_-tablet.webp",
+            "size": 27540,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/portrat_-tablet.jpg",
+            "size": 45861,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/portrat_-desktop.webp",
+            "size": 84216,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/portrat_-desktop.jpg",
+            "size": 110549,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/portrat_-large.webp",
+            "size": 200654,
+            "width": 1536
+          },
+          "large_jpg": {
+            "path": "/optimized/img/portrat_-large.jpg",
+            "size": 201739,
+            "width": 1536
+          }
+        }
+      }
+    },
+    "img/ph.jpg": {
+      "original": {
+        "width": 4912,
+        "height": 7360,
+        "format": "jpeg",
+        "size": 1827983
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/ph-mobile.webp",
+            "size": 5090,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/ph-mobile.jpg",
+            "size": 9795,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/ph-tablet.webp",
+            "size": 18154,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/ph-tablet.jpg",
+            "size": 37320,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/img/ph-desktop.webp",
+            "size": 37652,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/img/ph-desktop.jpg",
+            "size": 78168,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/ph-large.webp",
+            "size": 80582,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/img/ph-large.jpg",
+            "size": 175283,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "img/mrunal.png": {
+      "original": {
+        "width": 1024,
+        "height": 1024,
+        "format": "jpeg",
+        "size": 656711
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/mrunal-mobile.webp",
+            "size": 11994,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/mrunal-mobile.jpg",
+            "size": 18648,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/mrunal-tablet.webp",
+            "size": 33558,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/mrunal-tablet.jpg",
+            "size": 64870,
+            "width": 768
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/mrunal-large.webp",
+            "size": 48762,
+            "width": 1024
+          },
+          "large_jpg": {
+            "path": "/optimized/img/mrunal-large.jpg",
+            "size": 98486,
+            "width": 1024
+          }
+        }
+      }
+    },
+    "img/naveen.png": {
+      "original": {
+        "width": 1024,
+        "height": 1024,
+        "format": "jpeg",
+        "size": 699945
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/naveen-mobile.webp",
+            "size": 13608,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/naveen-mobile.jpg",
+            "size": 19517,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/naveen-tablet.webp",
+            "size": 47164,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/naveen-tablet.jpg",
+            "size": 73720,
+            "width": 768
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/naveen-large.webp",
+            "size": 76164,
+            "width": 1024
+          },
+          "large_jpg": {
+            "path": "/optimized/img/naveen-large.jpg",
+            "size": 116273,
+            "width": 1024
+          }
+        }
+      }
+    },
+    "img/wedding.png": {
+      "original": {
+        "width": 830,
+        "height": 844,
+        "format": "png",
+        "size": 339269
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/wedding-mobile.webp",
+            "size": 7978,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/wedding-mobile.jpg",
+            "size": 13210,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/wedding-tablet.webp",
+            "size": 20074,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/wedding-tablet.jpg",
+            "size": 37339,
+            "width": 768
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/wedding-large.webp",
+            "size": 21508,
+            "width": 830
+          },
+          "large_jpg": {
+            "path": "/optimized/img/wedding-large.jpg",
+            "size": 41399,
+            "width": 830
+          }
+        }
+      }
+    },
+    "img/riya.png": {
+      "original": {
+        "width": 1024,
+        "height": 1024,
+        "format": "jpeg",
+        "size": 752295
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/img/riya-mobile.webp",
+            "size": 18244,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/img/riya-mobile.jpg",
+            "size": 23212,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/img/riya-tablet.webp",
+            "size": 60870,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/img/riya-tablet.jpg",
+            "size": 87909,
+            "width": 768
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/img/riya-large.webp",
+            "size": 90656,
+            "width": 1024
+          },
+          "large_jpg": {
+            "path": "/optimized/img/riya-large.jpg",
+            "size": 135380,
+            "width": 1024
+          }
+        }
+      }
+    },
+    "IMG_2434.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1961944
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/IMG_2434-mobile.webp",
+            "size": 13680,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/IMG_2434-mobile.jpg",
+            "size": 17385,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/IMG_2434-tablet.webp",
+            "size": 49880,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/IMG_2434-tablet.jpg",
+            "size": 71414,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/IMG_2434-desktop.webp",
+            "size": 94732,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/IMG_2434-desktop.jpg",
+            "size": 143957,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/IMG_2434-large.webp",
+            "size": 175846,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/IMG_2434-large.jpg",
+            "size": 294536,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "IMG_2388.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1217243
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/IMG_2388-mobile.webp",
+            "size": 4124,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/IMG_2388-mobile.jpg",
+            "size": 6850,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/IMG_2388-tablet.webp",
+            "size": 14362,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/IMG_2388-tablet.jpg",
+            "size": 25756,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/IMG_2388-desktop.webp",
+            "size": 31770,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/IMG_2388-desktop.jpg",
+            "size": 54195,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/IMG_2388-large.webp",
+            "size": 70242,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/IMG_2388-large.jpg",
+            "size": 121673,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "ph_wedding.png": {
+      "original": {
+        "width": 1536,
+        "height": 1024,
+        "format": "png",
+        "size": 2698092
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/ph_wedding-mobile.webp",
+            "size": 12788,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/ph_wedding-mobile.jpg",
+            "size": 16495,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/ph_wedding-tablet.webp",
+            "size": 47184,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/ph_wedding-tablet.jpg",
+            "size": 66884,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/ph_wedding-desktop.webp",
+            "size": 87664,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/ph_wedding-desktop.jpg",
+            "size": 135889,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/ph_wedding-large.webp",
+            "size": 129716,
+            "width": 1536
+          },
+          "large_jpg": {
+            "path": "/optimized/ph_wedding-large.jpg",
+            "size": 203827,
+            "width": 1536
+          }
+        }
+      }
+    },
+    "placeholder-avatar.jpg": {
+      "original": {
+        "width": 1024,
+        "height": 1024,
+        "format": "jpeg",
+        "size": 292875
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/placeholder-avatar-mobile.webp",
+            "size": 2956,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/placeholder-avatar-mobile.jpg",
+            "size": 5298,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/placeholder-avatar-tablet.webp",
+            "size": 8572,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/placeholder-avatar-tablet.jpg",
+            "size": 16446,
+            "width": 768
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/placeholder-avatar-large.webp",
+            "size": 12198,
+            "width": 1024
+          },
+          "large_jpg": {
+            "path": "/optimized/placeholder-avatar-large.jpg",
+            "size": 23684,
+            "width": 1024
+          }
+        }
+      }
+    },
+    "IMG_2466.jpg": {
+      "original": {
+        "width": 4032,
+        "height": 3024,
+        "format": "jpeg",
+        "size": 945289
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/IMG_2466-mobile.webp",
+            "size": 13598,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/IMG_2466-mobile.jpg",
+            "size": 17127,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/IMG_2466-tablet.webp",
+            "size": 55286,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/IMG_2466-tablet.jpg",
+            "size": 77881,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/IMG_2466-desktop.webp",
+            "size": 116124,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/IMG_2466-desktop.jpg",
+            "size": 168595,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/IMG_2466-large.webp",
+            "size": 233328,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/IMG_2466-large.jpg",
+            "size": 368350,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "IMG_2442.jpg": {
+      "original": {
+        "width": 5712,
+        "height": 4284,
+        "format": "jpeg",
+        "size": 1850154
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/IMG_2442-mobile.webp",
+            "size": 10290,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/IMG_2442-mobile.jpg",
+            "size": 13117,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/IMG_2442-tablet.webp",
+            "size": 41318,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/IMG_2442-tablet.jpg",
+            "size": 58104,
+            "width": 768
+          }
+        },
+        "desktop": {
+          "desktop_webp": {
+            "path": "/optimized/IMG_2442-desktop.webp",
+            "size": 81036,
+            "width": 1200
+          },
+          "desktop_jpg": {
+            "path": "/optimized/IMG_2442-desktop.jpg",
+            "size": 122546,
+            "width": 1200
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/IMG_2442-large.webp",
+            "size": 153196,
+            "width": 1920
+          },
+          "large_jpg": {
+            "path": "/optimized/IMG_2442-large.jpg",
+            "size": 257106,
+            "width": 1920
+          }
+        }
+      }
+    },
+    "portratit.png": {
+      "original": {
+        "width": 826,
+        "height": 834,
+        "format": "png",
+        "size": 687091
+      },
+      "variants": {
+        "mobile": {
+          "mobile_webp": {
+            "path": "/optimized/portratit-mobile.webp",
+            "size": 11678,
+            "width": 320
+          },
+          "mobile_jpg": {
+            "path": "/optimized/portratit-mobile.jpg",
+            "size": 18571,
+            "width": 320
+          }
+        },
+        "tablet": {
+          "tablet_webp": {
+            "path": "/optimized/portratit-tablet.webp",
+            "size": 33694,
+            "width": 768
+          },
+          "tablet_jpg": {
+            "path": "/optimized/portratit-tablet.jpg",
+            "size": 64393,
+            "width": 768
+          }
+        },
+        "large": {
+          "large_webp": {
+            "path": "/optimized/portratit-large.webp",
+            "size": 37016,
+            "width": 826
+          },
+          "large_jpg": {
+            "path": "/optimized/portratit-large.jpg",
+            "size": 70819,
+            "width": 826
+          }
+        }
+      }
+    }
+  },
+  "sizes": [
+    {
+      "width": 320,
+      "suffix": "-mobile"
+    },
+    {
+      "width": 768,
+      "suffix": "-tablet"
+    },
+    {
+      "width": 1200,
+      "suffix": "-desktop"
+    },
+    {
+      "width": 1920,
+      "suffix": "-large"
+    }
+  ],
+  "formats": [
+    "webp",
+    "jpg"
+  ],
+  "totalProcessed": 113,
+  "cacheStrategy": "cache-first",
+  "maxCacheAge": 604800000
+}
