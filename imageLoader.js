@@ -1,8 +1,10 @@
 export default function customLoader({ src, width, quality }) {
+  // In development, always use original
   if (process.env.NODE_ENV === 'development') {
     return src;
   }
 
+  // External URLs — pass through unchanged
   if (
     src.startsWith('http://') ||
     src.startsWith('https://') ||
@@ -31,6 +33,14 @@ export default function customLoader({ src, width, quality }) {
 
   const lastDot = cleanSrc.lastIndexOf('.');
   const pathWithoutExt = lastDot !== -1 ? cleanSrc.substring(0, lastDot) : cleanSrc;
-  
-  return `/optimized/${pathWithoutExt}${suffix}.webp`;
+  const optimizedPath = `/optimized/${pathWithoutExt}${suffix}.webp`;
+
+  // If we know the optimized file exists (set by build step), use it.
+  // Otherwise fall back to the original src to avoid 404s on Vercel.
+  if (process.env.NEXT_PUBLIC_USE_OPTIMIZED_IMAGES === 'true') {
+    return optimizedPath;
+  }
+
+  // Default: serve original — still benefits from correct `sizes` in components
+  return src;
 }
